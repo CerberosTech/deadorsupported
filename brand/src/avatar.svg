@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Full-bleed square for avatars and app icons (X, beehiiv, Apple touch icon).
+       The mark fills the central ~70% (about 15% padding per side), so a circle crop keeps it whole. -->
+  <defs>
+    <linearGradient id="beat" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="400" y2="0">
+      <stop offset="0.63" stop-color="#3FCA7D"/><stop offset="0.63" stop-color="#FF6B5E"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="#142036"/>
+  <path d="M70 201H128l22-59 33 115 26-83 14 27H330" fill="none" stroke="url(#beat)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

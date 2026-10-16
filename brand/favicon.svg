@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Small-size mark: same shape as logo.svg, with a taller spike and thicker strokes so it reads at 16-32 px. -->
+  <defs>
+    <linearGradient id="beat" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="32" y2="0">
+      <stop offset="0.644" stop-color="#3FCA7D"/><stop offset="0.644" stop-color="#FF6B5E"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="#142036"/>
+  <path d="M4.5 16.2H9.6L11.5 9.2L14.5 22.8L16.8 12.9L18 16.2H27.5" fill="none" stroke="url(#beat)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

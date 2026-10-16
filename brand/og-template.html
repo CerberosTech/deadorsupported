@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OG image template | DeadOrSupported</title>
+<!--
+  Open Graph / social card template, 1200x630. Render with headless Chrome, for example:
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --screenshot=og-article.png \
+    --window-size=1200,630 --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=2000 \
+    "file:///ABSOLUTE/PATH/brand/og-template.html?kicker=Article&title=Is%20the%20Galaxy%20S21%20still%20supported%3F"
+  URL parameters (all optional):
+    title   headline (default: Is your gadget dead or supported?)
+    sub     one or two lines under the headline
+    kicker  small pill above the headline, e.g. Article, Newsletter
+    status  ok | soon | exp | dead: shows that status chip large, above the headline
+    chips   0 hides the row of four status chips at the bottom
+    url     text in the top-right corner (default: cerberostech.github.io/deadorsupported)
+-->
+<link rel="stylesheet" href="src/brand.css">
+<style>
+  body{width:1200px;height:630px}
+  .frame{position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 58px}
+  .top{display:flex;align-items:center;justify-content:space-between;font-size:34px}
+  .url{font-size:26px;color:var(--mist)}
+  .main{margin-block:auto}
+  .kicker{margin-bottom:24px;font-size:28px}
+  .status{margin-bottom:26px;font-size:46px}
+  h1{max-width:1010px;margin:0;font-size:92px;line-height:1;letter-spacing:-.025em}
+  h1.long{font-size:76px} h1.xlong{font-size:62px}
+  .main .pulse{margin:26px 0 22px}
+  .sub{max-width:930px;margin:0;color:var(--mist);font-size:32px;line-height:1.3}
+  .chips{font-size:28px}
+</style>
+</head>
+<body class="grid">
+<div class="frame">
+  <div class="top"><div class="lockup"><img src="logo.svg" alt=""><span>Dead<span>Or</span>Supported</span></div><div class="url" id="url"></div></div>
+  <div class="main"><div id="above"></div><h1 id="title"></h1><div id="pulse"></div><p class="sub" id="sub"></p></div>
+  <div class="chips" id="chips"></div>
+</div>
+<script src="src/brand.js"></script>
+<script>
+  const title = params.get('title') || 'Is your gadget dead or supported?';
+  const sub = params.get('sub') ?? 'Check if your phone, smart-home device or router still gets updates. Every status links to its source.';
+  const h1 = document.getElementById('title');
+  h1.textContent = title;
+  h1.className = title.length > 64 ? 'xlong' : title.length > 40 ? 'long' : '';
+  document.getElementById('sub').textContent = sub;
+  document.getElementById('url').textContent = params.get('url') || 'cerberostech.github.io/deadorsupported';
+  document.getElementById('pulse').innerHTML = pulse(440, { lead: 104, stroke: 5 });
+  const status = params.get('status'), kicker = params.get('kicker');
+  document.getElementById('above').innerHTML = status in ICONS ? `<div class="status">${chip(status)}</div>` : kicker ? `<div class="kicker"><span class="pill"></span></div>` : '';
+  if (kicker && !(status in ICONS)) document.querySelector('.kicker .pill').textContent = kicker;
+  if (params.get('chips') !== '0') document.getElementById('chips').innerHTML = ['ok', 'soon', 'exp', 'dead'].map(k => chip(k)).join('');
+</script>
+</body>
+</html>

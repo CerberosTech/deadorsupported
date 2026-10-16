@@ -37,6 +37,11 @@ We previously listed the iPhone X as fully dead. We have corrected that to **end
 - It's acceptable as a secondary phone. For banking, work email, DigiD or a child's main phone, an iPhone that runs **iOS 26** (iPhone 11 or newer, or iPhone SE 2nd gen or newer) is a much safer choice.
 - **Don't buy a used iPhone X in 2026** except as a cheap spare. An iPhone 13 or newer gives you years of full support.
 
+
+## Buying a used replacement?
+
+A cheap used phone can still be a bad deal if it is Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It is a paid PDF we make ourselves; checking a model on our [device list](../../index.html) stays free.
+
 ## Sources
 
 - Apple, [Apple security releases](https://support.apple.com/en-us/100100) (checked 16 Oct 2026)

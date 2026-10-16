@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Icon render wrapper | DeadOrSupported</title>
+<!-- Draws ?svg= at exactly ?size= px in the top-left corner. Headless Chrome can use a viewport wider
+     than --window-size and centre a bare SVG in it, so render icons through this page instead. -->
+<style>html,body{margin:0;background:transparent;overflow:hidden}img{position:fixed;top:0;left:0;display:block}</style>
+</head>
+<body>
+<img id="icon" alt="">
+<script>
+  const p = new URLSearchParams(location.search), img = document.getElementById('icon');
+  img.width = img.height = +p.get('size');
+  img.src = p.get('svg');
+</script>
+</body>
+</html>

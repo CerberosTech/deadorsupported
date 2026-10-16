@@ -41,3 +41,4 @@ const day=TODAY.toISOString().slice(0,10);
 fs.writeFileSync('dist/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(u=>`<url><loc>${u}</loc><lastmod>${day}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 fs.writeFileSync('dist/robots.txt',`User-agent: *\nAllow: /\nSitemap: ${SITE}sitemap.xml\n`);
 console.log(`built ${data.length} devices, ${bnames.length} brands, ${pages.length} pages, ${killed.length} killed`);
+fs.writeFileSync('dist/google8042a96498438aa5.html','google-site-verification: google8042a96498438aa5.html');

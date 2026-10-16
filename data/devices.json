@@ -1,0 +1,442 @@
+[
+ {
+  "name": "Google Pixel 3",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2021-10",
+  "status": "dead",
+  "note": "Guaranteed updates ended Oct 2021; final security patch Feb 2022.",
+  "source": "https://arstechnica.com/gadgets/2022/02/androids-february-security-patch-marks-the-last-update-for-the-pixel-3/",
+  "verified": true
+ },
+ {
+  "name": "Google Pixel 4",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2022-10",
+  "status": "dead",
+  "note": "Guaranteed updates until Oct 2022.",
+  "source": "https://arstechnica.com/gadgets/2022/10/the-pixel-4-hits-end-of-life-after-three-years-of-service/",
+  "verified": true
+ },
+ {
+  "name": "Google Pixel 4a",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2023-08",
+  "status": "dead",
+  "note": "Guaranteed updates until Aug 2023.",
+  "source": "https://support.google.com/pixelphone/answer/4457705",
+  "verified": true
+ },
+ {
+  "name": "Google Pixel 5",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2023-10",
+  "status": "dead",
+  "note": "Guaranteed updates until Oct 2023.",
+  "source": "https://support.google.com/pixelphone/answer/4457705",
+  "verified": true
+ },
+ {
+  "name": "Google Pixel 6",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2026-10",
+  "status": "auto",
+  "note": "Security updates guaranteed for 5 years from US launch (Oct 2021).",
+  "source": "https://support.google.com/pixelphone/answer/4457705",
+  "verified": true
+ },
+ {
+  "name": "Google Pixel 6a",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2027-07",
+  "status": "auto",
+  "note": "Security updates guaranteed until at least July 2027.",
+  "source": "https://support.google.com/pixelphone/answer/4457705",
+  "verified": true
+ },
+ {
+  "name": "Google Pixel 7",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2027-10",
+  "status": "auto",
+  "note": "Security updates guaranteed until at least Oct 2027.",
+  "source": "https://support.google.com/pixelphone/answer/4457705",
+  "verified": true
+ },
+ {
+  "name": "Google Pixel 8",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2030-10",
+  "status": "auto",
+  "note": "7 years of OS and security updates.",
+  "source": "https://blog.google/products-and-platforms/devices/pixel/software-support-pixel-8-pixel-8-pro/",
+  "verified": true
+ },
+ {
+  "name": "Google Pixel 9",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2031-08",
+  "status": "auto",
+  "note": "7 years of OS and security updates.",
+  "source": "https://support.google.com/pixelphone/answer/4457705",
+  "verified": true
+ },
+ {
+  "name": "Samsung Galaxy S8",
+  "brand": "Samsung",
+  "category": "Phone",
+  "eos": null,
+  "status": "dead",
+  "note": "No longer listed in Samsung's security update program.",
+  "source": "https://security.samsungmobile.com/workScope.smsb",
+  "verified": true
+ },
+ {
+  "name": "Samsung Galaxy S21",
+  "brand": "Samsung",
+  "category": "Phone",
+  "eos": null,
+  "status": "supported",
+  "note": "Check Samsung's monthly/quarterly/biannual list for current tier; exact end date not published.",
+  "source": "https://security.samsungmobile.com/workScope.smsb",
+  "verified": true
+ },
+ {
+  "name": "Samsung Galaxy S23",
+  "brand": "Samsung",
+  "category": "Phone",
+  "eos": null,
+  "status": "supported",
+  "note": "Listed in Samsung's security update program; exact end date not published.",
+  "source": "https://security.samsungmobile.com/workScope.smsb",
+  "verified": true
+ },
+ {
+  "name": "Samsung Galaxy S24",
+  "brand": "Samsung",
+  "category": "Phone",
+  "eos": null,
+  "status": "supported",
+  "note": "Samsung promises 7 generations of OS upgrades and 7 years of security updates; exact end date not published.",
+  "source": "https://security.samsungmobile.com/workScope.smsb",
+  "verified": true
+ },
+ {
+  "name": "Samsung Galaxy A54",
+  "brand": "Samsung",
+  "category": "Phone",
+  "eos": null,
+  "status": "supported",
+  "note": "Listed in Samsung's security update program; exact end date not published.",
+  "source": "https://security.samsungmobile.com/workScope.smsb",
+  "verified": true
+ },
+ {
+  "name": "Apple iPhone 6s",
+  "brand": "Apple",
+  "category": "Phone",
+  "eos": null,
+  "status": "dead",
+  "note": "Last major version is iOS 15; Apple does not publish end-of-security dates.",
+  "source": "https://support.apple.com/en-us/100100",
+  "verified": true
+ },
+ {
+  "name": "Apple iPhone 8",
+  "brand": "Apple",
+  "category": "Phone",
+  "eos": null,
+  "status": "dead",
+  "note": "Last major version is iOS 16; Apple does not publish end-of-security dates.",
+  "source": "https://support.apple.com/en-us/100100",
+  "verified": true
+ },
+ {
+  "name": "Apple iPhone X",
+  "brand": "Apple",
+  "category": "Phone",
+  "eos": null,
+  "status": "dead",
+  "note": "Last major version is iOS 16; Apple does not publish end-of-security dates.",
+  "source": "https://support.apple.com/en-us/100100",
+  "verified": true
+ },
+ {
+  "name": "Apple iPhone XS / XR",
+  "brand": "Apple",
+  "category": "Phone",
+  "eos": null,
+  "status": "ending",
+  "note": "Not supported by iOS 26; may still get iOS 18 security fixes for a while (unannounced).",
+  "source": "https://support.apple.com/en-us/100100",
+  "verified": true
+ },
+ {
+  "name": "Apple iPhone 11",
+  "brand": "Apple",
+  "category": "Phone",
+  "eos": null,
+  "status": "supported",
+  "note": "Supported by the current iOS release.",
+  "source": "https://support.apple.com/en-us/100100",
+  "verified": true
+ },
+ {
+  "name": "Apple iPhone 13",
+  "brand": "Apple",
+  "category": "Phone",
+  "eos": null,
+  "status": "supported",
+  "note": "Supported by the current iOS release.",
+  "source": "https://support.apple.com/en-us/100100",
+  "verified": true
+ },
+ {
+  "name": "Apple iPhone 15",
+  "brand": "Apple",
+  "category": "Phone",
+  "eos": null,
+  "status": "supported",
+  "note": "Supported by the current iOS release.",
+  "source": "https://support.apple.com/en-us/100100",
+  "verified": true
+ },
+ {
+  "name": "Google Nest Secure",
+  "brand": "Google",
+  "category": "Smart home",
+  "eos": "2024-04-08",
+  "status": "dead",
+  "note": "Alarm system stopped working with the app and cloud.",
+  "source": "https://support.google.com/googlehome/answer/10191961?hl=en",
+  "verified": true
+ },
+ {
+  "name": "Dropcam / Dropcam Pro",
+  "brand": "Google",
+  "category": "Smart home",
+  "eos": "2024-04-08",
+  "status": "dead",
+  "note": "Cameras stopped working when support ended.",
+  "source": "https://support.google.com/googlenest/answer/9257288",
+  "verified": true
+ },
+ {
+  "name": "Nest Learning Thermostat (1st & 2nd gen)",
+  "brand": "Google",
+  "category": "Smart home",
+  "eos": "2025-10-25",
+  "status": "dead",
+  "note": "App control and remote features ended; basic thermostat still works locally.",
+  "source": "https://support.google.com/googlehome/answer/16233096",
+  "verified": true
+ },
+ {
+  "name": "Belkin Wemo (most models)",
+  "brand": "Belkin",
+  "category": "Smart home",
+  "eos": "2026-01-31",
+  "status": "dead",
+  "note": "Cloud and app support ended; HomeKit-configured devices may keep working locally.",
+  "source": "https://www.belkin.com/support-article/?articleNum=335419",
+  "verified": true
+ },
+ {
+  "name": "Logitech POP Smart Button",
+  "brand": "Logitech",
+  "category": "Smart home",
+  "eos": "2025-10-15",
+  "status": "dead",
+  "note": "Logitech: buttons and hub 'will lose all functionality' as of Oct 15, 2025.",
+  "source": "https://arstechnica.com/gadgets/2025/10/logitech-will-brick-its-100-pop-smart-home-buttons-on-october-15/",
+  "verified": true
+ },
+ {
+  "name": "Insteon Hub",
+  "brand": "Insteon",
+  "category": "Smart home",
+  "eos": "2022-04",
+  "status": "dead",
+  "note": "Cloud servers shut off without warning in mid-April 2022 (exact day unannounced); a user-led buyer brought them back in June 2022.",
+  "source": "https://arstechnica.com/gadgets/2022/04/insteon-finally-comes-clean-about-its-sudden-smart-home-shutdown/",
+  "verified": true
+ },
+ {
+  "name": "Revolv Hub",
+  "brand": "Google/Nest",
+  "category": "Smart home",
+  "eos": "2016-05-15",
+  "status": "dead",
+  "note": "Hub bricked after Nest acquisition.",
+  "source": "https://www.theverge.com/2016/4/4/11362928/google-nest-revolv-shutdown-smart-home-products",
+  "verified": true
+ },
+ {
+  "name": "Lowe's Iris",
+  "brand": "Lowe's",
+  "category": "Smart home",
+  "eos": "2019-03-31",
+  "status": "dead",
+  "note": "Platform shut down.",
+  "source": "https://www.theverge.com/2019/2/2/18208407/lowes-iris-smart-home-platform-shutting-down-march-2019",
+  "verified": true
+ },
+ {
+  "name": "Samsung SmartThings Hub (v1)",
+  "brand": "Samsung",
+  "category": "Smart home",
+  "eos": "2021-06-30",
+  "status": "dead",
+  "note": "Hub v1 support ended.",
+  "source": "https://arstechnica.com/gadgets/2021/06/samsung-is-killing-the-first-gen-smartthings-hub-this-month/",
+  "verified": true
+ },
+ {
+  "name": "Philips Hue Bridge v1",
+  "brand": "Philips",
+  "category": "Smart home",
+  "eos": "2020-04-30",
+  "status": "dead",
+  "note": "Cloud/remote access and updates ended; local control continues.",
+  "source": "https://developers.meethue.com/important-news-about-bridge-v1/",
+  "verified": true
+ },
+ {
+  "name": "Amazon Echo Look",
+  "brand": "Amazon",
+  "category": "Smart home",
+  "eos": "2020-07-24",
+  "status": "dead",
+  "note": "Device and app discontinued.",
+  "source": "https://www.theverge.com/2020/5/29/21274805/amazon-echo-look-discontinue-gadget-shopping-recycle-fashion-camera",
+  "verified": true
+ },
+ {
+  "name": "Amazon Dash Button",
+  "brand": "Amazon",
+  "category": "Smart home",
+  "eos": "2019-08-31",
+  "status": "dead",
+  "note": "Buttons deactivated.",
+  "source": "https://www.theverge.com/2019/8/1/20750814/amazon-dash-buttons-discontinued-orders-august-31st",
+  "verified": true
+ },
+ {
+  "name": "Embodied Moxie Robot",
+  "brand": "Embodied",
+  "category": "Smart home",
+  "eos": null,
+  "status": "dead",
+  "note": "Embodied shut down in Dec 2024 and Moxie lost its cloud service; no official shutdown date was published.",
+  "source": "https://www.theverge.com/2024/12/9/24317477/ai-robot-companions-for-kids-go-dark-as-company-shutters",
+  "verified": false
+ },
+ {
+  "name": "Spotify Car Thing",
+  "brand": "Spotify",
+  "category": "Gadget",
+  "eos": "2024-12-09",
+  "status": "dead",
+  "note": "Device stopped working; Spotify offered refunds.",
+  "source": "https://www.theverge.com/2024/12/9/24317379/spotify-car-thing-shut-down-refund-deadline",
+  "verified": true
+ },
+ {
+  "name": "Humane AI Pin",
+  "brand": "Humane",
+  "category": "Gadget",
+  "eos": "2025-02-28",
+  "status": "dead",
+  "note": "Cloud services shut down after HP acquisition.",
+  "source": "https://www.engadget.com/ai/all-of-humanes-ai-pins-will-stop-working-in-10-days-225643798.html",
+  "verified": true
+ },
+ {
+  "name": "Google Stadia controller & service",
+  "brand": "Google",
+  "category": "Gadget",
+  "eos": "2023-01-18",
+  "status": "dead",
+  "note": "Service shut down; controller can be switched to Bluetooth mode.",
+  "source": "https://support.google.com/stadia/answer/12790109",
+  "verified": true
+ },
+ {
+  "name": "Amazon Halo band",
+  "brand": "Amazon",
+  "category": "Wearable",
+  "eos": "2023-07-31",
+  "status": "dead",
+  "note": "Devices and service discontinued; refunds offered.",
+  "source": "https://www.aboutamazon.com/news/company-news/amazon-halo-discontinued",
+  "verified": true
+ },
+ {
+  "name": "Microsoft Band",
+  "brand": "Microsoft",
+  "category": "Wearable",
+  "eos": "2019-05-31",
+  "status": "dead",
+  "note": "Health dashboard and app services retired.",
+  "source": "https://www.theverge.com/2019/3/1/18246794/microsoft-band-refunds-apps-services-end-of-support-may-fitness-tracker",
+  "verified": true
+ },
+ {
+  "name": "Google Glass Enterprise Edition",
+  "brand": "Google",
+  "category": "Wearable",
+  "eos": "2023-09-15",
+  "status": "dead",
+  "note": "Sales ended March 2023; support ended Sept 2023.",
+  "source": "https://support.google.com/glass-enterprise/customer/answer/13417888",
+  "verified": true
+ },
+ {
+  "name": "Jibo social robot",
+  "brand": "Jibo",
+  "category": "Gadget",
+  "eos": null,
+  "status": "dead",
+  "note": "Original company's servers shut down; exact date unverified.",
+  "source": "https://pirg.org/edfund/resources/electronic-waste-graveyard/",
+  "verified": false
+ },
+ {
+  "name": "Sonos legacy (Zone Players, Connect, Play:5 gen 1)",
+  "brand": "Sonos",
+  "category": "Smart home",
+  "eos": "2020-05",
+  "status": "dead",
+  "note": "No further software updates or new features after May 2020.",
+  "source": "https://www.theverge.com/2020/1/21/21075043/sonos-software-updates-ending-play-5-connect-zone-players",
+  "verified": true
+ },
+ {
+  "name": "Neato robot vacuums",
+  "brand": "Neato",
+  "category": "Smart home",
+  "eos": null,
+  "status": "ending",
+  "note": "Company shut down in 2023 and promised cloud service for about 5 more years; exact end date unverified.",
+  "source": "https://pirg.org/edfund/resources/electronic-waste-graveyard/",
+  "verified": false
+ },
+ {
+  "name": "Amazon Kindle (13 models from 2007–2012)",
+  "brand": "Amazon",
+  "category": "E-reader",
+  "eos": "2026-05-20",
+  "status": "dead",
+  "note": "Store access cut off; can no longer buy, download or borrow books.",
+  "source": "https://pirg.org/edfund/resources/electronic-waste-graveyard/",
+  "verified": true
+ }
+]

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="DeadOrSupported">
+  <!-- Master mark: a heartbeat that goes flat, on an ink tile. Transparent outside the tile.
+       One stroke; a hard-stop gradient switches it from green (alive) to red (flat). -->
+  <defs>
+    <linearGradient id="beat" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="0">
+      <stop offset="0.633" stop-color="#3FCA7D"/><stop offset="0.633" stop-color="#FF6B5E"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#142036"/>
+  <path d="M87 258H162l28-77 43 150 34-109 19 36H425" fill="none" stroke="url(#beat)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

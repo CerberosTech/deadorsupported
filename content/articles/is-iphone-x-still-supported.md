@@ -7,7 +7,7 @@ updated: 2026-10-16
 
 # Is the iPhone X still supported in 2026?
 
-**Short answer: only barely.** The iPhone X can't run iOS 17, 18 or 26. Its last major version is **iOS 16**. Apple is still releasing occasional **security-only** updates for it, though. The most recent is **iOS 16.7.16 on 11 May 2026**. So it isn't completely abandoned, but it's in its final phase, and Apple doesn't say when the fixes will stop.
+**Short answer: only barely.** The iPhone X can't run iOS 17, 18, 26 or 27. Its last major version is **iOS 16**. Apple is still releasing occasional **security-only** updates for it, though. The most recent is **iOS 16.7.16 on 11 May 2026**. So it isn't completely abandoned, but it's in its final phase, and Apple doesn't say when the fixes will stop.
 
 ## The facts (checked 16 October 2026)
 
@@ -16,7 +16,7 @@ updated: 2026-10-16
 | Released | November 2017 (iOS 11) |
 | Last major iOS version | iOS 16 |
 | Latest update | iOS 16.7.16, 11 May 2026 |
-| Current iOS (for newer iPhones) | iOS 26.7.x |
+| Current iOS (for newer iPhones) | iOS 27 (27.0.1, 28 Sep 2026) |
 | Official end-of-support date | None published by Apple |
 
 Apple's [security releases page](https://support.apple.com/en-us/100100) lists iOS 16.7.16 as available for "iPhone 8, iPhone 8 Plus, iPhone X" and some older iPads, released 11 May 2026. Its [security notes](https://support.apple.com/en-us/127113) show it fixed one issue (CVE-2026-28950). Before that came iOS 16.7.15 (March 2026), 16.7.14 (February 2026) and 16.7.13 (January 2026).
@@ -34,7 +34,7 @@ We previously listed the iPhone X as fully dead. We have corrected that to **end
 ## Should you keep using an iPhone X?
 
 - Install **iOS 16.7.16** now: Settings → General → Software Update.
-- It's acceptable as a secondary phone. For banking, work email, DigiD or a child's main phone, an iPhone that runs **iOS 26** (iPhone 11 or newer, or iPhone SE 2nd gen or newer) is a much safer choice.
+- It's acceptable as a secondary phone. For banking, work email, DigiD or a child's main phone, an iPhone that runs **iOS 27** (iPhone 11 or newer) is a much safer choice.
 - **Don't buy a used iPhone X in 2026** except as a cheap spare. An iPhone 13 or newer gives you years of full support.
 
 

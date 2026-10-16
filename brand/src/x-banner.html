@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>X banner 1500x500 | DeadOrSupported</title>
+<!-- X (Twitter) header, 1500x500. All text stays inside the central 1500x360 band (y 70-430).
+     The profile picture covers the bottom-left (about x 40-375, y 330-500), so text starts at x 420 and only
+     the pulse line, at y 230, crosses into the left part. Add ?guides=1 to see both zones. -->
+<link rel="stylesheet" href="brand.css">
+<style>
+  body{width:1500px;height:500px}
+  #pulse{position:absolute;left:0;top:164px}
+  .text{position:absolute;left:420px;right:60px;top:0;bottom:0}
+  h1{position:absolute;left:0;bottom:302px;margin:0;font-size:73px;line-height:1;letter-spacing:-.025em;white-space:nowrap}
+  p{position:absolute;left:0;top:262px;margin:0;color:var(--mist);font-size:33px;line-height:1.2;white-space:nowrap}
+  .chips{position:absolute;left:0;top:326px;font-size:26px}
+  .guide{position:absolute;pointer-events:none}
+  .safe{left:0;right:0;top:70px;height:360px;outline:2px dashed #ff0}
+  .avatar{left:40px;top:330px;width:335px;height:335px;border-radius:50%;outline:2px dashed #f0f}
+</style>
+</head>
+<body class="grid">
+<div id="pulse"></div>
+<div class="text">
+  <h1>Is your gadget dead or supported?</h1>
+  <p>Update and shutdown tracker for phones, smart home and routers</p>
+  <div class="chips" id="chips"></div>
+</div>
+<script src="brand.js"></script>
+<script>
+  // one long pulse: the beat sits left of the text, then the line goes flat (red) under the headline
+  document.getElementById('pulse').innerHTML = pulse(1500, { lead: 140, stroke: 6, scale: 3, bleed: true });
+  document.getElementById('chips').innerHTML = ['ok', 'soon', 'exp', 'dead'].map(k => chip(k)).join('');
+  if (params.get('guides')) document.body.insertAdjacentHTML('beforeend', '<div class="guide safe"></div><div class="guide avatar"></div>');
+</script>
+</body>
+</html>

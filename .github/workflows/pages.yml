@@ -21,6 +21,8 @@ jobs:
         with:
           node-version: 20
       - run: node build.mjs
+      - name: Copy static/ files as-is (IndexNow key etc.)
+        run: if [ -d static ]; then cp -r static/. dist/; fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -34,3 +36,15 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+  indexnow:
+    # Ping IndexNow (Bing/Yandex/Seznam/Naver) with the live sitemap after each deploy. Key is public, no secrets.
+    needs: deploy
+    if: github.event_name != 'schedule'  # daily cron rebuilds don't change URLs
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/indexnow.mjs

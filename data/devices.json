@@ -103,10 +103,10 @@
   "name": "Samsung Galaxy S21",
   "brand": "Samsung",
   "category": "Phone",
-  "eos": null,
-  "status": "supported",
-  "note": "Check Samsung's monthly/quarterly/biannual list for current tier; exact end date not published.",
-  "source": "https://security.samsungmobile.com/workScope.smsb",
+  "eos": "2026-01",
+  "status": "dead",
+  "note": "S21, S21+ and S21 Ultra were removed from Samsung's security update list from the February 2026 cycle. Final OS: Android 15 / One UI 7 (May 2025). Sources disagree on the last regular patch month (November 2025 vs January 2026). Samsung may still issue rare patches for critical flaws. The S21 FE is separate and still gets quarterly updates.",
+  "source": "https://www.sammobile.com/news/galaxy-s21-plus-ultra-software-updates-stopped/",
   "verified": true
  },
  {

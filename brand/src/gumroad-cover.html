@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gumroad cover 1280x720 | DeadOrSupported</title>
+<!-- Gumroad product cover, 1280x720. The page mockups are real pages of the PDF, read from ../../_products/
+     (not committed). Add ?layout=thumb and render at 600x600 for the square thumbnail. -->
+<link rel="stylesheet" href="brand.css">
+<style>
+  body{width:1280px;height:720px}
+  .copy{position:absolute;top:0;bottom:0;left:88px;width:540px;display:flex;flex-direction:column;justify-content:center}
+  .copy .lockup{margin-bottom:46px;font-size:28px}
+  h1{margin:0;font-size:104px;line-height:.96;letter-spacing:-.03em}
+  .price{margin:26px 0 0;color:var(--pulse);font-size:46px;line-height:1.1}
+  .blurb{max-width:500px;margin:28px 0 0;color:var(--mist);font-size:27px;line-height:1.35}
+  .stack{position:absolute;inset:0 0 0 auto;width:640px}
+  .page{position:absolute;aspect-ratio:909/1287;overflow:hidden;border-radius:6px;background:#fff;
+        box-shadow:0 28px 56px rgba(0,0,0,.5),0 6px 16px rgba(0,0,0,.3)}
+  .page img{display:block;width:100%;height:100%}
+  /* back to front: page 1 (title), page 5 (Activation Lock), page 12 (the printable one-page checklist) */
+  .p1{top:156px;left:28px;width:350px;transform:rotate(-9deg)}
+  .p2{top:112px;left:112px;width:366px;transform:rotate(-3deg)}
+  .p3{top:78px;left:196px;width:390px;transform:rotate(4deg)}
+  /* square thumbnail */
+  body.thumb{width:600px;height:600px}
+  .thumb .copy{inset:auto 0 52px 0;width:auto;align-items:center;text-align:center;justify-content:flex-end}
+  .thumb .copy .lockup,.thumb .blurb{display:none}
+  .thumb h1{font-size:60px;line-height:1}
+  .thumb .price{margin-top:14px;font-size:34px}
+  .thumb .stack{inset:0;width:auto}
+  .thumb .p1{top:62px;left:104px;width:196px;transform:rotate(-9deg)}
+  .thumb .p2{top:40px;left:186px;width:204px;transform:rotate(-2deg)}
+  .thumb .p3{top:30px;left:270px;width:214px;transform:rotate(6deg)}
+</style>
+</head>
+<body class="grid">
+<div class="stack">
+  <div class="page p1"><img src="../../_products/sample-preview-1.png" alt=""></div>
+  <div class="page p2"><img src="../../_products/sample-preview-2.png" alt=""></div>
+  <div class="page p3"><img src="../../_products/sample-preview-3.png" alt=""></div>
+</div>
+<div class="copy">
+  <div class="lockup"><img src="../logo.svg" alt=""><span>Dead<span>Or</span>Supported</span></div>
+  <h1>Safe to Buy Used?</h1>
+  <p class="price">12-page checklist, €6</p>
+  <p class="blurb">Buying a used phone? Don't get stuck with a locked, stolen or soon-unpatched one.</p>
+</div>
+<script src="brand.js"></script>
+<script>if (params.get('layout') === 'thumb') document.body.classList.add('thumb');</script>
+</body>
+</html>

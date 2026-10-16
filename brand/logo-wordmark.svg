@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 588 112" role="img" aria-label="DeadOrSupported">
+  <!-- Horizontal lockup for light backgrounds. The wordmark is live text in the brand font stack;
+       textLength keeps it the same width when a fallback font is used. -->
+  <defs>
+    <linearGradient id="beat" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="112" y2="0">
+      <stop offset="0.623" stop-color="#3FCA7D"/><stop offset="0.623" stop-color="#FF6B5E"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="104" height="104" rx="23" fill="#142036"/>
+  <path d="M21.5 56.4H36.8L42.6 40.7L51.4 71.3L58.3 49.1L62.1 56.4H90.5" fill="none" stroke="url(#beat)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="132" y="78" textLength="449" lengthAdjust="spacingAndGlyphs" font-family="Bahnschrift, 'DIN Alternate', 'DIN Next', 'Roboto Condensed', 'Arial Narrow', sans-serif" font-weight="700" font-size="60" fill="#142036">Dead<tspan fill="#4A5568">Or</tspan>Supported</text>
+</svg>

@@ -37,6 +37,11 @@ It will keep working, but new security holes won't get fixed. Practical advice:
 - Over time some apps will raise their minimum Android version. Android 15 gives the S21 a long runway here.
 - **Buying used:** in 2026, a Galaxy S23 or newer is a better bet. Samsung lists the S23 for monthly updates, and the S24 and later come with up to 7 years of support.
 
+
+## Buying a used replacement?
+
+A cheap used phone can still be a bad deal if it is Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It is a paid PDF we make ourselves; checking a model on our [device list](../../index.html) stays free.
+
 ## Sources
 - Samsung Mobile Security, security update scope (official): https://security.samsungmobile.com/workScope.smsb
 - SamMobile, "Software updates for Galaxy S21, S21+, and S21 Ultra have been terminated" (Feb 2026): https://www.sammobile.com/news/galaxy-s21-plus-ultra-software-updates-stopped/

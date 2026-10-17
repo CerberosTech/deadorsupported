@@ -38,6 +38,8 @@ We previously listed the iPhone X as fully dead. We have corrected that to **end
 - **Don't buy a used iPhone X in 2026** except as a cheap spare. An iPhone 13 or newer gives you years of full support.
 
 
+Check the live status on our [iPhone X page](../../device/apple-iphone-x.html), and compare it with the [iPhone XS / XR](../../device/apple-iphone-xs-xr.html) and [iPhone 8](../../device/apple-iphone-8.html), which are in the same position.
+
 ## Buying a used replacement?
 
 A cheap used phone can still be a bad deal if it is Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It is a paid PDF we make ourselves; checking a model on our [device list](../../index.html) stays free.

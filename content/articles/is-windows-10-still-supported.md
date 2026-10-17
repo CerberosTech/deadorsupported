@@ -54,6 +54,10 @@ Your PC keeps working. But without ESU it no longer gets security fixes, so ever
 
 A cheap used laptop can still be a bad deal if it is locked to someone else's account, reported stolen, or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through the checks to do before you pay. It is a paid PDF we make ourselves; checking a model on our [device list](../../index.html) stays free.
 
+Looking for a replacement with years of updates left? Compare prices for [Windows 11 laptops at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dwindows%252011%2520laptop&f=txl&name=is-windows-10-still-supported) (search results; check the seller, condition and warranty before you buy).
+
+*Affiliate disclosure: bol.com links are affiliate links; we may earn a small commission at no extra cost to you. See our [disclosure](../../disclosure.html).*
+
 ## Sources
 - Microsoft, Windows 10 Consumer Extended Security Updates (US page, checked 17 Oct 2026): https://www.microsoft.com/en-us/windows/extended-security-updates
 - Microsoft, Windows 10 Consumer ESU (EEA version, Ireland page, checked 17 Oct 2026): https://www.microsoft.com/en-ie/windows/extended-security-updates

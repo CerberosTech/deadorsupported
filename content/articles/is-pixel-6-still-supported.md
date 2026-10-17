@@ -40,6 +40,10 @@ Have a Pixel 6a instead? It has its own date: see our [Pixel 6a page](../../devi
 
 A cheap used phone can still be a bad deal if it's Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It's a paid PDF we make ourselves; you can also check any model for free on our [Pixel 6 page](../../device/google-pixel-6.html) and the full [device list](../../index.html).
 
+Looking for a replacement with years of updates left? Compare prices for [Pixel 8 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%25208&f=txl&name=is-pixel-6-still-supported) or [Pixel 9 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%25209&f=txl&name=is-pixel-6-still-supported) (search results; check the seller, condition and warranty before you buy).
+
+*Affiliate disclosure: bol.com links are affiliate links; we may earn a small commission at no extra cost to you. See our [disclosure](../../disclosure.html).*
+
 ## Sources
 
 - Google, [Learn when you'll get software updates on Google Pixel phones](https://support.google.com/pixelphone/answer/4457705) (checked 16 Oct 2026)

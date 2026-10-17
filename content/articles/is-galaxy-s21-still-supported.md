@@ -38,6 +38,8 @@ It will keep working, but new security holes won't get fixed. Practical advice:
 - **Buying used:** in 2026, a Galaxy S23 or newer is a better bet. Samsung lists the S23 for monthly updates, and the S24 and later come with up to 7 years of support.
 
 
+Want the current status at a glance? See our [Galaxy S21 page](../../device/samsung-galaxy-s21.html). If you're replacing it, the [Galaxy S23](../../device/samsung-galaxy-s23.html) and [Galaxy S24](../../device/samsung-galaxy-s24.html) pages show how long those models are covered.
+
 ## Buying a used replacement?
 
 A cheap used phone can still be a bad deal if it is Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It is a paid PDF we make ourselves; checking a model on our [device list](../../index.html) stays free.

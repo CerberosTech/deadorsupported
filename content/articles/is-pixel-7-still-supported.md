@@ -38,6 +38,8 @@ The Pixel 6 is a year ahead on the same path: its guarantee ends this month. Rea
 2. **Keep using it, but plan ahead.** A Pixel 7 is fine for banking, DigiD and work email until October 2027. Budget for a replacement some time in the next year.
 3. **Don't buy a used Pixel 7 as your main phone in 2026.** It only has about a year of guaranteed updates left. **A Pixel 8 or newer is a better pick:** Google promises those 7 years of updates from their US launch. The Pixel 8 went on sale in the US in October 2023, so it's covered until October 2030, and newer models longer.
 
+Still on an older Pixel? See our [Pixel 6 page](../../device/google-pixel-6.html) and [Pixel 6a page](../../device/google-pixel-6a.html).
+
 ## Buying a used replacement?
 
 A cheap used phone can still be a bad deal if it's Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It's a paid PDF we make ourselves; you can also check any model for free on our [Pixel 7 page](../../device/google-pixel-7.html), our [Pixel 8 page](../../device/google-pixel-8.html) and the full [device list](../../index.html).

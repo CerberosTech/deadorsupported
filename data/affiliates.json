@@ -1,0 +1,617 @@
+{
+ "_meta": {
+  "about": "Affiliate links for the device-page replacement slot (<!-- AFFILIATE_SLOT:slug -->). Lookup order in build.mjs: exact device slug, then '_default:'+slug(category) (only for devices that are dead, ending or expired), else no box.",
+  "fields": "label (link text, honest), url (final tracking link, rendered as-is), dest (plain shop URL the tracking link points to), network ('bol' | 'awin' | ...), region ('nl', 'us', ...), rel (rendered rel attribute). Optional future fields: note.",
+  "bol": "Tracking format per affiliate.bol.com/nl/handleiding/tracking-url/: https://partner.bol.com/click/click?t=url&s=<SiteId>&url=<urlencoded bol URL>&f=txl&name=<slug>. SiteId 1550553.",
+  "awin_later": "To add Back Market via Awin once approved: add an entry with network 'awin' and url 'https://www.awin1.com/cread.php?awinmid=<advertiserId>&awinaffid=3125920&clickref=<slug>&ued=<urlencoded backmarket URL>'. Use the same keys; a slug entry may also be an array of entries if the template supports it.",
+  "updated": "2026-10-17"
+ },
+ "google-pixel-3": {
+  "label": "Shop the Google Pixel 10a at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%252010a&f=txl&name=google-pixel-3",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%2010a",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-pixel-4": {
+  "label": "Shop the Google Pixel 10a at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%252010a&f=txl&name=google-pixel-4",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%2010a",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-pixel-4a": {
+  "label": "Shop the Google Pixel 10a at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%252010a&f=txl&name=google-pixel-4a",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%2010a",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-pixel-5": {
+  "label": "Shop the Google Pixel 10a at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%252010a&f=txl&name=google-pixel-5",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%2010a",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-pixel-6": {
+  "label": "Shop the Google Pixel 10a at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%252010a&f=txl&name=google-pixel-6",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%2010a",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-pixel-6a": {
+  "label": "Shop the Google Pixel 10a at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%252010a&f=txl&name=google-pixel-6a",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%2010a",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-pixel-7": {
+  "label": "Shop the Google Pixel 10 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%252010&f=txl&name=google-pixel-7",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%2010",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "samsung-galaxy-s8": {
+  "label": "Shop the Samsung Galaxy S26 FE at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsamsung%2520galaxy%2520s26%2520fe&f=txl&name=samsung-galaxy-s8",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=samsung%20galaxy%20s26%20fe",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "samsung-galaxy-s21": {
+  "label": "Shop the Samsung Galaxy S26 FE at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsamsung%2520galaxy%2520s26%2520fe&f=txl&name=samsung-galaxy-s21",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=samsung%20galaxy%20s26%20fe",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "apple-iphone-6s": {
+  "label": "Shop the Apple iPhone 17e at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dapple%2520iphone%252017e&f=txl&name=apple-iphone-6s",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=apple%20iphone%2017e",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "apple-iphone-8": {
+  "label": "Shop the Apple iPhone 17e at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dapple%2520iphone%252017e&f=txl&name=apple-iphone-8",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=apple%20iphone%2017e",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "apple-iphone-x": {
+  "label": "Shop the Apple iPhone 17e at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dapple%2520iphone%252017e&f=txl&name=apple-iphone-x",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=apple%20iphone%2017e",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "apple-iphone-xs-xr": {
+  "label": "Shop the Apple iPhone 17e at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dapple%2520iphone%252017e&f=txl&name=apple-iphone-xs-xr",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=apple%20iphone%2017e",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-nest-secure": {
+  "label": "Shop smart alarm systems at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dslim%2520alarmsysteem&f=txl&name=google-nest-secure",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=slim%20alarmsysteem",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "dropcam-dropcam-pro": {
+  "label": "Shop Google Nest Cam security cameras at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520nest%2520cam&f=txl&name=dropcam-dropcam-pro",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20nest%20cam",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "nest-learning-thermostat-1st-2nd-gen": {
+  "label": "Shop the Google Nest Learning Thermostat (4th gen) at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520nest%2520learning%2520thermostat%25204e%2520generatie&f=txl&name=nest-learning-thermostat-1st-2nd-gen",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20nest%20learning%20thermostat%204e%20generatie",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "belkin-wemo-most-models": {
+  "label": "Shop Matter smart plugs at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dslimme%2520stekker%2520matter&f=txl&name=belkin-wemo-most-models",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=slimme%20stekker%20matter",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "logitech-pop-smart-button": {
+  "label": "Shop Matter smart buttons at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dslimme%2520knop%2520matter&f=txl&name=logitech-pop-smart-button",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=slimme%20knop%20matter",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "insteon-hub": {
+  "label": "Shop Matter smart home hubs at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsmart%2520home%2520hub%2520matter&f=txl&name=insteon-hub",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=smart%20home%20hub%20matter",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "revolv-hub": {
+  "label": "Shop Matter smart home hubs at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsmart%2520home%2520hub%2520matter&f=txl&name=revolv-hub",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=smart%20home%20hub%20matter",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "lowe-s-iris": {
+  "label": "Shop Matter smart home hubs at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsmart%2520home%2520hub%2520matter&f=txl&name=lowe-s-iris",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=smart%20home%20hub%20matter",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "samsung-smartthings-hub-v1": {
+  "label": "Shop the Aeotec SmartThings Hub at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Daeotec%2520smartthings%2520hub&f=txl&name=samsung-smartthings-hub-v1",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=aeotec%20smartthings%20hub",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "philips-hue-bridge-v1": {
+  "label": "Shop the Philips Hue Bridge at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dphilips%2520hue%2520bridge&f=txl&name=philips-hue-bridge-v1",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=philips%20hue%20bridge",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "amazon-echo-look": {
+  "label": "Shop Amazon Echo smart speakers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Damazon%2520echo&f=txl&name=amazon-echo-look",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=amazon%20echo",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "amazon-dash-button": {
+  "label": "Shop Amazon Echo smart speakers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Damazon%2520echo&f=txl&name=amazon-dash-button",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=amazon%20echo",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "embodied-moxie-robot": {
+  "label": "Shop coding robots for kids at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dprogrammeerbare%2520robot%2520kinderen&f=txl&name=embodied-moxie-robot",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=programmeerbare%20robot%20kinderen",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "sonos-legacy-zone-players-connect-play-5-gen-1": {
+  "label": "Shop current Sonos speakers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsonos%2520speaker&f=txl&name=sonos-legacy-zone-players-connect-play-5-gen-1",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=sonos%20speaker",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "neato-robot-vacuums": {
+  "label": "Shop robot vacuums at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Drobotstofzuiger&f=txl&name=neato-robot-vacuums",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=robotstofzuiger",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-nest-doorbell-wired-2nd-gen": {
+  "label": "Shop the Google Nest Doorbell (wired, 3rd gen) at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520nest%2520doorbell%2520wired%25203e%2520generatie&f=txl&name=google-nest-doorbell-wired-2nd-gen",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20nest%20doorbell%20wired%203e%20generatie",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "spotify-car-thing": {
+  "label": "Shop car phone holders at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dtelefoonhouder%2520auto&f=txl&name=spotify-car-thing",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=telefoonhouder%20auto",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "humane-ai-pin": {
+  "label": "Shop smartwatches at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsmartwatch&f=txl&name=humane-ai-pin",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=smartwatch",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-stadia-controller-service": {
+  "label": "Shop Bluetooth game controllers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dbluetooth%2520controller&f=txl&name=google-stadia-controller-service",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=bluetooth%20controller",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "jibo-social-robot": {
+  "label": "Shop smart displays at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsmart%2520display&f=txl&name=jibo-social-robot",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=smart%20display",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "amazon-halo-band": {
+  "label": "Shop the Fitbit Charge 6 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520charge%25206&f=txl&name=amazon-halo-band",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20charge%206",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "microsoft-band": {
+  "label": "Shop the Fitbit Charge 6 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520charge%25206&f=txl&name=microsoft-band",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20charge%206",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-glass-enterprise-edition": {
+  "label": "Shop smart glasses at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsmart%2520glasses&f=txl&name=google-glass-enterprise-edition",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=smart%20glasses",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-pixel-watch": {
+  "label": "Shop the Google Pixel Watch 4 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%2520watch%25204&f=txl&name=google-pixel-watch",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%20watch%204",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-pixel-watch-2": {
+  "label": "Shop the Google Pixel Watch 4 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%2520watch%25204&f=txl&name=google-pixel-watch-2",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%20watch%204",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "google-pixel-watch-3": {
+  "label": "Shop the Google Pixel Watch 4 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%2520watch%25204&f=txl&name=google-pixel-watch-3",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20pixel%20watch%204",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-ace-3": {
+  "label": "Shop kids' activity trackers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dactivity%2520tracker%2520kinderen&f=txl&name=fitbit-ace-3",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=activity%20tracker%20kinderen",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "amazon-kindle-13-models-from-2007-2012": {
+  "label": "Shop the Kindle Paperwhite at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dkindle%2520paperwhite&f=txl&name=amazon-kindle-13-models-from-2007-2012",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=kindle%20paperwhite",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "chromecast-1st-gen": {
+  "label": "Shop the Google TV Streamer at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520tv%2520streamer&f=txl&name=chromecast-1st-gen",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20tv%20streamer",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "chromecast-with-google-tv-hd": {
+  "label": "Shop the Google TV Streamer at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520tv%2520streamer&f=txl&name=chromecast-with-google-tv-hd",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20tv%20streamer",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "netgear-nighthawk-xr500": {
+  "label": "Shop Wi-Fi 7 routers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dwifi%25207%2520router&f=txl&name=netgear-nighthawk-xr500",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=wifi%207%20router",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "netgear-nighthawk-r7000p": {
+  "label": "Shop Wi-Fi 7 routers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dwifi%25207%2520router&f=txl&name=netgear-nighthawk-r7000p",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=wifi%207%20router",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "netgear-nighthawk-rax40": {
+  "label": "Shop Wi-Fi 7 routers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dwifi%25207%2520router&f=txl&name=netgear-nighthawk-rax40",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=wifi%207%20router",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "netgear-nighthawk-rax38": {
+  "label": "Shop Wi-Fi 7 routers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dwifi%25207%2520router&f=txl&name=netgear-nighthawk-rax38",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=wifi%207%20router",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "netgear-c6220-cable-modem-router": {
+  "label": "Shop Wi-Fi 7 routers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dwifi%25207%2520router&f=txl&name=netgear-c6220-cable-modem-router",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=wifi%207%20router",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-luxe": {
+  "label": "Shop the Fitbit Inspire 3 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520inspire%25203&f=txl&name=fitbit-luxe",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20inspire%203",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-inspire-2": {
+  "label": "Shop the Fitbit Inspire 3 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520inspire%25203&f=txl&name=fitbit-inspire-2",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20inspire%203",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-charge-5": {
+  "label": "Shop the Fitbit Charge 6 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520charge%25206&f=txl&name=fitbit-charge-5",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20charge%206",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-charge-4": {
+  "label": "Shop the Fitbit Charge 6 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520charge%25206&f=txl&name=fitbit-charge-4",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20charge%206",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-charge-3": {
+  "label": "Shop the Fitbit Charge 6 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520charge%25206&f=txl&name=fitbit-charge-3",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20charge%206",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-charge-2": {
+  "label": "Shop the Fitbit Charge 6 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520charge%25206&f=txl&name=fitbit-charge-2",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20charge%206",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-alta-hr": {
+  "label": "Shop the Fitbit Charge 6 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520charge%25206&f=txl&name=fitbit-alta-hr",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20charge%206",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-surge": {
+  "label": "Shop the Fitbit Charge 6 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520charge%25206&f=txl&name=fitbit-surge",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20charge%206",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-versa-3": {
+  "label": "Shop the Fitbit Versa 4 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520versa%25204&f=txl&name=fitbit-versa-3",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20versa%204",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-versa-2": {
+  "label": "Shop the Fitbit Versa 4 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520versa%25204&f=txl&name=fitbit-versa-2",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20versa%204",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-versa-lite": {
+  "label": "Shop the Fitbit Versa 4 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520versa%25204&f=txl&name=fitbit-versa-lite",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20versa%204",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-versa": {
+  "label": "Shop the Fitbit Versa 4 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520versa%25204&f=txl&name=fitbit-versa",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20versa%204",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-blaze": {
+  "label": "Shop the Fitbit Versa 4 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520versa%25204&f=txl&name=fitbit-blaze",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20versa%204",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-ionic": {
+  "label": "Shop the Fitbit Versa 4 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520versa%25204&f=txl&name=fitbit-ionic",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20versa%204",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "fitbit-sense": {
+  "label": "Shop the Fitbit Sense 2 at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dfitbit%2520sense%25202&f=txl&name=fitbit-sense",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=fitbit%20sense%202",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "roku-2-xs": {
+  "label": "Shop the Google TV Streamer at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520tv%2520streamer&f=txl&name=roku-2-xs",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20tv%20streamer",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "roku-lt-2400x": {
+  "label": "Shop the Google TV Streamer at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520tv%2520streamer&f=txl&name=roku-lt-2400x",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20tv%20streamer",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "roku-streaming-stick-3500x": {
+  "label": "Shop the Google TV Streamer at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520tv%2520streamer&f=txl&name=roku-streaming-stick-3500x",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20tv%20streamer",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "roku-1-roku-se": {
+  "label": "Shop the Google TV Streamer at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520tv%2520streamer&f=txl&name=roku-1-roku-se",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20tv%20streamer",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "roku-2-2720x": {
+  "label": "Shop the Google TV Streamer at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520tv%2520streamer&f=txl&name=roku-2-2720x",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20tv%20streamer",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "roku-4": {
+  "label": "Shop the Google TV Streamer at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520tv%2520streamer&f=txl&name=roku-4",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=google%20tv%20streamer",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "_default:phone": {
+  "label": "Shop current smartphones at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsmartphone&f=txl&name=default-phone",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=smartphone",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "_default:smart-home": {
+  "label": "Shop Matter smart home devices at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dmatter%2520smart%2520home&f=txl&name=default-smart-home",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=matter%20smart%20home",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "_default:gadget": {
+  "label": "Shop tech gadgets at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgadgets&f=txl&name=default-gadget",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=gadgets",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "_default:wearable": {
+  "label": "Shop smartwatches and fitness trackers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsmartwatch&f=txl&name=default-wearable",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=smartwatch",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "_default:e-reader": {
+  "label": "Shop e-readers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3De-reader&f=txl&name=default-e-reader",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=e-reader",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "_default:streaming": {
+  "label": "Shop 4K streaming media players at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dmediaspeler%25204k&f=txl&name=default-streaming",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=mediaspeler%204k",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ },
+ "_default:router": {
+  "label": "Shop Wi-Fi 7 routers at bol.com",
+  "url": "https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dwifi%25207%2520router&f=txl&name=default-router",
+  "dest": "https://www.bol.com/nl/nl/s/?searchtext=wifi%207%20router",
+  "network": "bol",
+  "region": "nl",
+  "rel": "sponsored nofollow noopener"
+ }
+}

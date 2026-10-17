@@ -45,6 +45,8 @@ Samsung's launch-era policy for 2022 flagships was five years of security update
 Only at a price that reflects roughly **four months of updates left**. A Galaxy S23 (on Samsung's *monthly* list) or a Galaxy S24 (up to seven years of updates) is a much safer long-term buy.
 
 
+For comparison, see our [Galaxy S21 page](../../device/samsung-galaxy-s21.html) (support already ended) and the [Galaxy S23 page](../../device/samsung-galaxy-s23.html) if you're thinking of upgrading.
+
 ## Buying a used replacement?
 
 A cheap used phone can still be a bad deal if it is Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It is a paid PDF we make ourselves; checking a model on our [device list](../../index.html) stays free.

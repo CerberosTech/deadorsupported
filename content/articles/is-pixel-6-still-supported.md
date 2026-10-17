@@ -34,6 +34,8 @@ Google's [Pixel update policy](https://support.google.com/pixelphone/answer/4457
 2. **Plan a replacement in the next few months** if it's your main phone, especially if you use it for banking, DigiD or work email.
 3. **If you buy used or refurbished, pick a Pixel 8 or newer.** Google promises those 7 years of updates from their US launch, so a Pixel 8 is covered until October 2030 and newer models longer. A used Pixel 7 only has until October 2027, which is barely a year.
 
+Have a Pixel 6a instead? It has its own date: see our [Pixel 6a page](../../device/google-pixel-6a.html). Thinking of upgrading? The [Pixel 8 page](../../device/google-pixel-8.html) shows how long it's covered.
+
 ## Buying a used replacement?
 
 A cheap used phone can still be a bad deal if it's Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It's a paid PDF we make ourselves; you can also check any model for free on our [Pixel 6 page](../../device/google-pixel-6.html) and the full [device list](../../index.html).

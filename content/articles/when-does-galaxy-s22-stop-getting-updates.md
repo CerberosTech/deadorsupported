@@ -51,6 +51,8 @@ For comparison, see our [Galaxy S21 page](../../device/samsung-galaxy-s21.html) 
 
 A cheap used phone can still be a bad deal if it is Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It is a paid PDF we make ourselves; checking a model on our [device list](../../index.html) stays free.
 
+Thinking about upgrading? Our ranking of [the best used or refurbished phones to buy in 2026](../best-used-phone-to-buy-2026/) shows which models still have years of updates ahead.
+
 Looking for a replacement with years of updates left? Compare prices for [Galaxy S23 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsamsung%2520galaxy%2520s23&f=txl&name=when-does-galaxy-s22-stop-getting-updates) or [Galaxy S24 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsamsung%2520galaxy%2520s24&f=txl&name=when-does-galaxy-s22-stop-getting-updates) (search results; check the seller, condition and warranty before you buy).
 
 *Affiliate disclosure: bol.com links are affiliate links; we may earn a small commission at no extra cost to you. See our [disclosure](../../disclosure.html).*

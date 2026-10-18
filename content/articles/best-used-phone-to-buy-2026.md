@@ -7,7 +7,7 @@ updated: 2026-10-18
 
 # Which used or refurbished phone should you buy in 2026?
 
-**Short answer: a Pixel 8 or newer, a Galaxy S24, or an iPhone 13 or newer.** Those still have roughly **four or more years** of security updates ahead. Skip the **Pixel 6, Pixel 7, Galaxy S21 and S22, and iPhone XR**: their updates have ended or end within about a year, so the "bargain" turns into a phone your bank app eventually refuses. This page ranks popular refurbished phones by how long they'll stay supported, using each maker's own promises where they exist and clearly marked **estimates** where they don't.
+**Short answer: a Pixel 8 or newer, a Galaxy S24 or S25, or an iPhone 13 or newer.** Those still have roughly **four or more years** of security updates ahead. Skip the **Pixel 6, Pixel 7, Galaxy S21 and S22, and iPhone XR**: their updates have ended or end within about a year, so the "bargain" turns into a phone your bank app eventually refuses. This page ranks popular refurbished phones by how long they'll stay supported, using each maker's own promises where they exist and clearly marked **estimates** where they don't.
 
 ## Why updates matter more than specs on a used phone
 
@@ -18,7 +18,8 @@ A phone without security updates still turns on, but new security holes stop get
 | Phone | Updates until | Where that date comes from | Years left (about) |
 |---|---|---|---|
 | Pixel 9a | April 2032 | Google's 7-year promise, on sale April 2025 | 5.5 |
-| [Pixel 9](../../device/google-pixel-9.html), 9 Pro XL | August 2031 | Google's 7-year promise, on sale August 2024 | 4.8 |
+| [Galaxy S25](../when-does-galaxy-s25-stop-getting-updates/), S25+, S25 Ultra | about February 2032 (**our estimate**) | Samsung's 7-year promise from the January/February 2025 launch | 5.3 |
+| [Pixel 9](../when-does-pixel-9-stop-getting-updates/), 9 Pro XL | August 2031 | Google's 7-year promise, on sale August 2024 | 4.8 |
 | Pixel 8a | May 2031 | Google's 7-year promise, on sale May 2024 | 4.5 |
 | [Galaxy S24](../when-does-galaxy-s24-stop-getting-updates/), S24+, S24 Ultra | about January 2031 (**our estimate**) | Samsung's 7-year promise from the January 2024 launch | 4.2 |
 | [Pixel 8](../when-does-pixel-8-stop-getting-updates/), 8 Pro | October 2030 | Google's 7-year promise, on sale October 2023 | 4 |
@@ -31,7 +32,7 @@ Google's dates follow its rule that "Pixel 8 and later phones will get updates f
 ## Our picks
 
 - **Best value Android: Pixel 8 or Pixel 8a.** Four-plus years of guaranteed updates, and they're the oldest Pixels on the 7-year promise, so they're usually the cheapest way in. Details: [when does the Pixel 8 stop getting updates](../when-does-pixel-8-stop-getting-updates/).
-- **Best Samsung: Galaxy S24.** It's getting One UI 9 now and has four more Android upgrades promised. A used [Galaxy S23](../when-does-galaxy-s23-stop-getting-updates/) is cheaper but is on its last major upgrade.
+- **Best Samsung: Galaxy S24.** It's getting One UI 9 now and has four more Android upgrades promised. A used [Galaxy S23](../when-does-galaxy-s23-stop-getting-updates/) is cheaper but is on its last major upgrade. If the price gap is small, a used [Galaxy S25](../when-does-galaxy-s25-stop-getting-updates/) adds about a year (to about February 2032, our estimate).
 - **Best iPhone on a budget: iPhone 13.** It runs iOS 27, the same version as the newest iPhones. Apple gives no date, so this is a judgement call based on history. If you want something Apple has put in writing, an **iPhone 15** has a minimum until September 2028.
 
 ## Phones to skip in 2026
@@ -75,7 +76,7 @@ Search results on bol.com (check the seller, condition and warranty before you b
 ## Sources
 
 - Google, [Learn when you'll get software updates on Google Pixel phones](https://support.google.com/pixelphone/answer/4457705) and [Find when your Pixel device became available](https://support.google.com/pixelphone/answer/15738422) (checked 18 Oct 2026)
-- Samsung Newsroom, [Enter the New Era of Mobile AI With Samsung Galaxy S24 Series](https://news.samsung.com/global/enter-the-new-era-of-mobile-ai-with-samsung-galaxy-s24-series) (17 Jan 2024)
+- Samsung Newsroom, [Enter the New Era of Mobile AI With Samsung Galaxy S24 Series](https://news.samsung.com/global/enter-the-new-era-of-mobile-ai-with-samsung-galaxy-s24-series) (17 Jan 2024) and [Samsung Galaxy S25 Series Sets the Standard of AI Phone as a True AI Companion](https://news.samsung.com/global/samsung-galaxy-s25-series-sets-the-standard-of-ai-phone-as-a-true-ai-companion) (January 2025)
 - Samsung Mobile Security, [Security update scope](https://security.samsungmobile.com/workScope.smsb) (checked 18 Oct 2026)
 - Apple, [UK PSTI statement of compliance, iPhone 15 (A3090)](https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=securityTelecommunication%2FiPhone+15+%28Model+A3090%29_V0.pdf) (29 Apr 2024)
 - Apple, [Apple security releases](https://support.apple.com/en-us/100100) (checked 18 Oct 2026)

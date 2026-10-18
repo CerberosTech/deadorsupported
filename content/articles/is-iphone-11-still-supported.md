@@ -61,6 +61,8 @@ For our estimates on the in-between models, see [When does the iPhone 12 stop ge
 
 A cheap used phone can still be a bad deal if it is Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It is a paid PDF we make ourselves; checking a model on our [device list](../../index.html) stays free.
 
+Comparing options? Our guide to [which used or refurbished phone to buy in 2026](../best-used-phone-to-buy-2026/) ranks popular models by years of updates left (the iPhone 11 is on its skip list).
+
 Looking for a phone with more years of updates left? Compare prices for [iPhone 13 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dapple%2520iphone%252013&f=txl&name=is-iphone-11-still-supported) or [iPhone 15 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dapple%2520iphone%252015&f=txl&name=is-iphone-11-still-supported) (search results; check the seller, condition and warranty before you buy).
 
 *Affiliate disclosure: bol.com links are affiliate links; we may earn a small commission at no extra cost to you. See our [disclosure](../../disclosure.html).*

@@ -65,6 +65,8 @@ Google's [Pixel update page](https://support.google.com/pixelphone/answer/445770
 
 A cheap used phone can still be a bad deal if it's locked to someone else's account, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It's a paid PDF we make ourselves; checking a model on our [device list](../../index.html) stays free.
 
+For other options, including the [Galaxy S25](../when-does-galaxy-s25-stop-getting-updates/), see our ranking of [which used or refurbished phone to buy in 2026](../best-used-phone-to-buy-2026/).
+
 Compare prices for [Galaxy S24 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dsamsung%2520galaxy%2520s24&f=txl&name=when-does-galaxy-s24-stop-getting-updates) or [Pixel 9 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dgoogle%2520pixel%25209&f=txl&name=when-does-galaxy-s24-stop-getting-updates) (search results; check the seller, condition and warranty before you buy).
 
 *Affiliate disclosure: bol.com links are affiliate links; we may earn a small commission at no extra cost to you. See our [disclosure](../../disclosure.html).*

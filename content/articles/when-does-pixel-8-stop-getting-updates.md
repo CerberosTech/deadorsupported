@@ -44,7 +44,7 @@ For comparison, the [Pixel 6](../is-pixel-6-still-supported/) is at that point r
 
 ## Is a Pixel 8 worth buying used or refurbished in 2026?
 
-**Yes, as long as the price reflects that it's the oldest 7-year Pixel.** A used Pixel 8 bought now still has about **four years** of guaranteed updates, which beats a used Pixel 7 (about one year) by a mile. If you can find a **Pixel 8a** for a similar price, it's covered seven months longer (May 2031). A **Pixel 9** is covered until August 2031, per the same [Google table](https://support.google.com/pixelphone/answer/15738422).
+**Yes, as long as the price reflects that it's the oldest 7-year Pixel.** A used Pixel 8 bought now still has about **four years** of guaranteed updates, which beats a used Pixel 7 (about one year) by a mile. If you can find a **Pixel 8a** for a similar price, it's covered seven months longer (May 2031). A **[Pixel 9](../when-does-pixel-9-stop-getting-updates/)** is covered until August 2031, per the same [Google table](https://support.google.com/pixelphone/answer/15738422).
 
 Before you pay, check the phone is on **Android 17** and recent patches, that it isn't carrier-locked, and that the previous owner removed their Google account (otherwise Factory Reset Protection locks you out).
 

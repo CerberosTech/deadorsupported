@@ -64,7 +64,7 @@ If you want more years than an S23 has left, these phones carry longer official 
 | [Pixel 8](../../device/google-pixel-8.html) | 7 years of OS upgrades, security updates and Feature Drops, "into 2030" (Google, October 2023) | Supported |
 | [Galaxy S23](../../device/samsung-galaxy-s23.html) (for comparison) | 4 generations of OS upgrades and 5 years of security updates (Samsung, February 2023) | On Samsung's monthly list; getting its last OS upgrade |
 
-By our own maths, seven years from the S24's January 2024 launch points to about **2031**. That's an estimate, since Samsung doesn't print end dates. For older Samsung phones that are further along the same path, see [Is the Galaxy S21 FE still supported?](../is-galaxy-s21-fe-still-supported/) and [Is the Galaxy S21 still supported?](../is-galaxy-s21-still-supported/).
+By our own maths, seven years from the S24's January 2024 launch points to about **2031**. That's an estimate, since Samsung doesn't print end dates. For older Samsung phones that are further along the same path, see [Is the Galaxy S21 FE still supported?](../is-galaxy-s21-fe-still-supported/) and [Is the Galaxy S21 still supported?](../is-galaxy-s21-still-supported/). Looking at Samsung's mid-range instead? The [Galaxy A54](../when-does-galaxy-a54-stop-getting-updates/) launched a month after the S23 with the same four-upgrades, five-years promise.
 
 ## Buying a used replacement?
 

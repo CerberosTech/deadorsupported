@@ -23,7 +23,7 @@ A phone without security updates still turns on, but new security holes stop get
 | Pixel 8a | May 2031 | Google's 7-year promise, on sale May 2024 | 4.5 |
 | [Galaxy S24](../when-does-galaxy-s24-stop-getting-updates/), S24+, S24 Ultra | about January 2031 (**our estimate**) | Samsung's 7-year promise from the January 2024 launch | 4.2 |
 | [Pixel 8](../when-does-pixel-8-stop-getting-updates/), 8 Pro | October 2030 | Google's 7-year promise, on sale October 2023 | 4 |
-| [iPhone 15](../../device/apple-iphone-15.html) | at least September 2028 (Apple's minimum); likely longer (**our estimate**) | Apple's UK filing: "minimum 5 years from the first supply date" of 22 Sep 2023 | 2 guaranteed, probably 4+ (estimate) |
+| [iPhone 15](../when-does-iphone-15-stop-getting-updates/) | at least September 2028 (Apple's minimum); likely around 2031 to 2032 (**our estimate**) | Apple's UK filing: "minimum 5 years from the first supply date" of 22 Sep 2023; runs iOS 27 today | 2 guaranteed, about 4 to 5 (estimate) |
 | [iPhone 14](../when-does-iphone-14-stop-getting-updates/) | at least September 2027 (Apple's minimum); likely around 2030 to 2031 (**our estimate**) | Apple's UK filing: "minimum 5 years from the first supply date" of 16 Sep 2022; runs iOS 27 today | 1 guaranteed, about 3 to 4 (estimate) |
 | [iPhone 13](../when-does-iphone-13-stop-getting-updates/) | around 2030 (**our estimate**) | No Apple promise; runs iOS 27 today; Apple's track record | about 3 (estimate) |
 | [Galaxy A54](../when-does-galaxy-a54-stop-getting-updates/) | about March 2028 (**our estimate**) | Samsung's 5-year security promise from the March 2023 launch | 1.4 |

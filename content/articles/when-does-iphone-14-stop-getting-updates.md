@@ -77,7 +77,7 @@ Not sure which to pick? Our ranking of [which used or refurbished phone to buy i
 
 | Phone | Status today | What Apple has said |
 |---|---|---|
-| [iPhone 15](../../device/apple-iphone-15.html) | Runs iOS 27 | Security updates for at least 5 years from 22 September 2023 (UK filing) |
+| [iPhone 15](../when-does-iphone-15-stop-getting-updates/) | Runs iOS 27 | Security updates for at least 5 years from 22 September 2023 (UK filing) |
 | iPhone 14 series | Runs iOS 27 | Security updates for at least 5 years from 16 September 2022 (UK filing) |
 | [iPhone 13](../when-does-iphone-13-stop-getting-updates/) | Runs iOS 27 | No published support period |
 | [iPhone 12](../when-does-iphone-12-stop-getting-updates/) | Runs iOS 27 | No published support period |

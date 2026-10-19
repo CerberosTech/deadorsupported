@@ -47,7 +47,7 @@ The iPhone 13 is now **5 years** old and has had six major versions (iOS 15, 16,
 
 A cheap used phone can still be a bad deal if it's Activation-Locked, reported stolen, carrier-locked or close to its own end-of-support date. Our own guide, [Safe to Buy Used? The Second-Hand Phone & Gadget Checklist](https://deadorsupported.gumroad.com/l/bqlcoi), walks you through every check before you pay. It's a paid PDF we make ourselves; you can also check any model for free on our [iPhone 13 page](../../device/apple-iphone-13.html) and the full [device list](../../index.html).
 
-Comparing it with other models? See [which used or refurbished phone to buy in 2026](../best-used-phone-to-buy-2026/), where the iPhone 13 is our budget iPhone pick.
+Comparing it with other models? See [which used or refurbished phone to buy in 2026](../best-used-phone-to-buy-2026/), where the iPhone 13 is our budget iPhone pick. The iPhone 14 and 14 Plus use the same A15 chip as the iPhone 13; see [when does the iPhone 14 stop getting updates?](../when-does-iphone-14-stop-getting-updates/)
 
 Looking for a replacement with years of updates left? Compare prices for [iPhone 15 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dapple%2520iphone%252015&f=txl&name=when-does-iphone-13-stop-getting-updates) or [iPhone 16 at bol.com](https://partner.bol.com/click/click?t=url&s=1550553&url=https%3A%2F%2Fwww.bol.com%2Fnl%2Fnl%2Fs%2F%3Fsearchtext%3Dapple%2520iphone%252016&f=txl&name=when-does-iphone-13-stop-getting-updates) (search results; check the seller, condition and warranty before you buy).
 

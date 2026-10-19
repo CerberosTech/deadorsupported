@@ -140,6 +140,36 @@
   "verified": true
  },
  {
+  "name": "Samsung Galaxy A23 5G",
+  "brand": "Samsung",
+  "category": "Phone",
+  "eos": null,
+  "status": "dead",
+  "note": "Removed from Samsung's quarterly security update list in the October 2026 update plan, so it no longer gets regular software updates. It received Android 13 and 14, then two years of quarterly security patches. Exact final patch date not published.",
+  "source": "https://www.sammobile.com/news/samsung-ends-software-update-support-galaxy-a23-5g/",
+  "verified": true
+ },
+ {
+  "name": "Samsung Galaxy A23 (LTE)",
+  "brand": "Samsung",
+  "category": "Phone",
+  "eos": "2026-04",
+  "status": "dead",
+  "note": "The LTE model stopped getting software updates in April 2026, a few months before the 5G model.",
+  "source": "https://www.sammobile.com/news/samsung-ends-software-update-support-galaxy-a23-5g/",
+  "verified": true
+ },
+ {
+  "name": "Samsung Galaxy A04s",
+  "brand": "Samsung",
+  "category": "Phone",
+  "eos": null,
+  "status": "dead",
+  "note": "Removed from Samsung's quarterly security update list in the October 2026 update plan, ending regular security updates. The phone keeps working, but new vulnerabilities may go unpatched. Exact final patch date not published.",
+  "source": "https://www.sammyfans.com/2026/10/06/samsung-ends-software-update-support-for-these-two-galaxy-a-series-phones/",
+  "verified": true
+ },
+ {
   "name": "Apple iPhone 6s",
   "brand": "Apple",
   "category": "Phone",
@@ -207,6 +237,16 @@
   "status": "supported",
   "note": "Supported by the current iOS release.",
   "source": "https://support.apple.com/en-us/100100",
+  "verified": true
+ },
+ {
+  "name": "Sony Xperia 10 VI",
+  "brand": "Sony",
+  "category": "Phone",
+  "eos": "2028-06",
+  "status": "auto",
+  "note": "Sony cancelled the promised Android 17 upgrade in October 2026, citing the phone's storage configuration, so its major OS upgrades have ended. Security updates continue for four years from launch, until about June 2028.",
+  "source": "https://www.theverge.com/tech/1012789/sony-xperia-10-vi-smartphone-android-17-update-security",
   "verified": true
  },
  {

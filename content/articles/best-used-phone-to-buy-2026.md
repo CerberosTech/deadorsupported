@@ -2,7 +2,7 @@
 title: "Which Used or Refurbished Phone Should You Buy in 2026? (Ranked by Updates Left)"
 description: "A cheap used phone is only cheap if it still gets security updates. Here are the refurbished Pixels, Galaxys and iPhones with the most years of support left, and the ones to skip."
 slug: best-used-phone-to-buy-2026
-updated: 2026-10-18
+updated: 2026-10-19
 ---
 
 # Which used or refurbished phone should you buy in 2026?
@@ -24,7 +24,9 @@ A phone without security updates still turns on, but new security holes stop get
 | [Galaxy S24](../when-does-galaxy-s24-stop-getting-updates/), S24+, S24 Ultra | about January 2031 (**our estimate**) | Samsung's 7-year promise from the January 2024 launch | 4.2 |
 | [Pixel 8](../when-does-pixel-8-stop-getting-updates/), 8 Pro | October 2030 | Google's 7-year promise, on sale October 2023 | 4 |
 | [iPhone 15](../../device/apple-iphone-15.html) | at least September 2028 (Apple's minimum); likely longer (**our estimate**) | Apple's UK filing: "minimum 5 years from the first supply date" of 22 Sep 2023 | 2 guaranteed, probably 4+ (estimate) |
+| [iPhone 14](../when-does-iphone-14-stop-getting-updates/) | at least September 2027 (Apple's minimum); likely around 2030 to 2031 (**our estimate**) | Apple's UK filing: "minimum 5 years from the first supply date" of 16 Sep 2022; runs iOS 27 today | 1 guaranteed, about 3 to 4 (estimate) |
 | [iPhone 13](../when-does-iphone-13-stop-getting-updates/) | around 2030 (**our estimate**) | No Apple promise; runs iOS 27 today; Apple's track record | about 3 (estimate) |
+| [Galaxy A54](../when-does-galaxy-a54-stop-getting-updates/) | about March 2028 (**our estimate**) | Samsung's 5-year security promise from the March 2023 launch | 1.4 |
 | [Galaxy S23](../when-does-galaxy-s23-stop-getting-updates/) | about February 2028 (**our estimate**) | Samsung's 5-year security promise from the February 2023 launch | 1.3 |
 
 Google's dates follow its rule that "Pixel 8 and later phones will get updates for 7 years starting from when the device first became available on the Google Store in the US" ([Google](https://support.google.com/pixelphone/answer/4457705)), applied to the months in Google's [availability table](https://support.google.com/pixelphone/answer/15738422). Samsung's promises come from its launch announcements; Samsung doesn't print end dates, so those are our maths. Apple doesn't publish end dates either, but its UK [statement of compliance for the iPhone 15](https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=securityTelecommunication%2FiPhone+15+%28Model+A3090%29_V0.pdf) sets a "minimum 5 years from the first supply date" of 22 September 2023. In practice Apple has usually gone well past that, which is why we rate older iPhones higher than the bare minimum suggests.

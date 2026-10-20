@@ -50,6 +50,16 @@
   "verified": true
  },
  {
+  "name": "Google Pixel 6 Pro",
+  "brand": "Google",
+  "category": "Phone",
+  "eos": "2026-10",
+  "status": "auto",
+  "note": "Security updates guaranteed for 5 years from US launch (Oct 2021). The October 2026 patch is the newest one; Google has not said whether it is the last.",
+  "source": "https://support.google.com/pixelphone/answer/4457705",
+  "verified": true
+ },
+ {
   "name": "Google Pixel 6a",
   "brand": "Google",
   "category": "Phone",
@@ -1160,5 +1170,45 @@
   "note": "Reached End-of-Support; no fixes planned. Exact EOS date not stated on the source.",
   "source": "https://kb.netgear.com/000070416/December-2025-NETGEAR-Security-Advisory",
   "verified": false
+ },
+ {
+  "name": "Xiaomi 12T",
+  "brand": "Xiaomi",
+  "category": "Phone",
+  "eos": "2026-10-13",
+  "status": "auto",
+  "note": "On Xiaomi's end-of-life list: no more software or security updates after 13 Oct 2026, four years after launch. Xiaomi says it may still ship a fix for a very serious vulnerability.",
+  "source": "https://trust.mi.com/misrc/updates/phone",
+  "verified": true
+ },
+ {
+  "name": "Xiaomi 12T Pro",
+  "brand": "Xiaomi",
+  "category": "Phone",
+  "eos": "2026-10-13",
+  "status": "auto",
+  "note": "On Xiaomi's end-of-life list: no more software or security updates after 13 Oct 2026, four years after launch. Xiaomi says it may still ship a fix for a very serious vulnerability.",
+  "source": "https://trust.mi.com/misrc/updates/phone",
+  "verified": true
+ },
+ {
+  "name": "Xiaomi POCO C65",
+  "brand": "Xiaomi",
+  "category": "Phone",
+  "eos": "2026-11-06",
+  "status": "auto",
+  "note": "Xiaomi's end-of-life date is 6 Nov 2026, three years after launch. After that it gets no software or security updates.",
+  "source": "https://trust.mi.com/misrc/updates/phone",
+  "verified": true
+ },
+ {
+  "name": "Xiaomi Redmi 13C",
+  "brand": "Xiaomi",
+  "category": "Phone",
+  "eos": "2026-11-10",
+  "status": "auto",
+  "note": "Xiaomi's end-of-life date is 10 Nov 2026, three years after launch. After that it gets no software or security updates.",
+  "source": "https://trust.mi.com/misrc/updates/phone",
+  "verified": true
  }
 ]

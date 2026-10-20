@@ -1,4 +1,5 @@
 // Checks the built site in dist/. Run after the build:  node build.mjs && node check-dist.mjs
+// Also checks that every generated page footer's "More free tools from CerberosTech" block links once to each sister site.
 // Optional: node check-dist.mjs <baseline-dist>  also compares the page list, sitemap.xml and robots.txt with an older build.
 // No dependencies. Exits with code 1 when a check fails.
 import fs from 'fs';
@@ -130,7 +131,35 @@ for (const f of html) {
 }
 ok(/Safe to Buy Used\? checklist is our own product, and we sell it/.test(text(read('disclosure.html'))), 'disclosure.html does not say the checklist is our own product');
 
-// 6. optional: compare with an older build
+// 6. sister-site footer: every generated page links once to each CerberosTech home, as a plain followed link
+const SISTERS = [
+  ['https://cerberostech.github.io/stroomprijs/en/', 'Dutch electricity price today (hourly)'],
+  ['https://cerberostech.github.io/belastingcalculator/en/', 'Dutch tax calculator 2026'],
+  ['https://cerberostech.github.io/isde-checker/en/', 'ISDE heat pump subsidy checker (NL)'],
+  ['https://cerberostech.github.io/woningmarkt/en/', 'Dutch housing market by municipality'],
+];
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+let sisterPages = 0;
+for (const f of html) {
+  const h = read(f);
+  let all = ok(h.includes('<h2 id="sister-h">More free tools from CerberosTech</h2>'), f, 'sister-sites footer heading missing');
+  ok((h.match(/id="sister-h"/g) || []).length === 1, f, 'sister-sites heading id is not unique');
+  for (const [href, label] of SISTERS) {
+    const hits = [...h.matchAll(new RegExp(`<a href="${escRe(href)}">([^<]*)</a>`, 'g'))];
+    const once = ok(hits.length === 1 && hits[0][1] === label, f, 'sister link missing, duplicated or wrong anchor', href, hits.map(m => m[1]).join(' | '));
+    const plain = ok(!new RegExp(`<a\\s[^>]*href="${escRe(href)}"[^>]*\\srel=`, 'i').test(h), f, 'sister link is not a plain followed link', href);
+    const n = h.split(href).length - 1;
+    const onceHref = ok(n === 1, f, 'sister URL does not appear exactly once', href, n);
+    all = all && once && plain && onceHref;
+  }
+  ok(!h.includes('https://cerberostech.github.io/belastingcalculator/"'), f, 'old belastingcalculator link (without /en/) is still present');
+  if (all) sisterPages++;
+}
+ok(sisterPages === html.length, `sister footer on ${sisterPages} of ${html.length} generated pages`);
+const htmlFiles = files.filter(f => f.endsWith('.html'));
+console.log(`sister links: ${sisterPages}/${html.length} generated pages, ${htmlFiles.length} HTML files in dist/ (${htmlFiles.length - html.length} excluded: ${GOOGLE})`);
+
+// 7. optional: compare with an older build
 const base = process.argv[2];
 if (base) {
   const old = walk(base).map(f => path.relative(base, f).split(path.sep).join('/')).filter(f => f.endsWith('.html')).sort();

@@ -1,5 +1,6 @@
 // Checks the built site in dist/. Run after the build:  node build.mjs && node check-dist.mjs
 // Also checks that every generated page footer's "More free tools from CerberosTech" block links once to each sister site.
+// Also checks dist/killed.xml, the RSS 2.0 feed for the Recently killed list.
 // Optional: node check-dist.mjs <baseline-dist>  also compares the page list, sitemap.xml and robots.txt with an older build.
 // No dependencies. Exits with code 1 when a check fails.
 import fs from 'fs';
@@ -29,6 +30,135 @@ const text = h => unesc(h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/st
 const tags = (h, tag) => [...h.matchAll(new RegExp(`<${tag}\\s([^>]*)>`, 'g'))].map(m => Object.fromEntries([...m[1].matchAll(/([\w:-]+)="([^"]*)"/g)].map(a => [a[1], unesc(a[2])])));
 const metaOf = (h, key) => tags(h, 'meta').filter(a => a.property === key || a.name === key).map(a => a.content);
 const urlToFile = u => { let p = u.slice(SITE.length).split(/[?#]/)[0]; if (p === '' || p.endsWith('/')) p += 'index.html'; return p; };
+
+// Strict XML 1.0 well-formedness parser (no dependencies). Rejects bare < and &, bad entities,
+// unquoted or duplicate attributes, mismatched tags, and trailing markup. Decodes the five
+// predefined entities and numeric character references.
+const parseXml = src => {
+  if (typeof src !== 'string' || src.includes('\0')) throw new Error('XML must be a string');
+  let i = 0;
+  const n = src.length;
+  const err = m => { throw new Error(`${m} (at offset ${i})`); };
+  const legal = cp => cp === 0x9 || cp === 0xA || cp === 0xD || (cp >= 0x20 && cp <= 0xD7FF) || (cp >= 0xE000 && cp <= 0xFFFD) || (cp >= 0x10000 && cp <= 0x10FFFF);
+  if (src.charCodeAt(0) === 0xFEFF) i++;
+  const skipWs = () => { while (i < n && (src[i] === ' ' || src[i] === '\t' || src[i] === '\n' || src[i] === '\r')) i++; };
+  const nameRe = /[A-Za-z_:][A-Za-z0-9._:-]*/y;
+  const readName = () => { nameRe.lastIndex = i; const m = nameRe.exec(src); if (!m) err('expected a name'); i = nameRe.lastIndex; return m[0]; };
+  const readEntity = () => {
+    if (src.startsWith('&amp;', i)) { i += 5; return '&'; }
+    if (src.startsWith('&lt;', i)) { i += 4; return '<'; }
+    if (src.startsWith('&gt;', i)) { i += 4; return '>'; }
+    if (src.startsWith('&quot;', i)) { i += 6; return '"'; }
+    if (src.startsWith('&apos;', i)) { i += 6; return "'"; }
+    const hex = /^&#x([0-9A-Fa-f]+);/y, dec = /^&#([0-9]+);/y;
+    hex.lastIndex = i; dec.lastIndex = i;
+    const hm = hex.exec(src); let cp;
+    if (hm) { cp = parseInt(hm[1], 16); i = hex.lastIndex; }
+    else { const dm = dec.exec(src); if (!dm) err('invalid entity reference'); cp = parseInt(dm[1], 10); i = dec.lastIndex; }
+    if (cp > 0x10FFFF || !legal(cp)) err('illegal character reference');
+    return String.fromCodePoint(cp);
+  };
+  const readText = quote => {
+    let s = '';
+    while (i < n) {
+      const c = src[i];
+      if (c === '<') { if (quote) err('bare < in attribute value'); return s; }
+      if (quote && c === quote) return s;
+      if (c === '&') { s += readEntity(); continue; }
+      if (!quote && src.startsWith(']]>', i)) err('illegal ]]> in text');
+      const cp = src.codePointAt(i);
+      if (!legal(cp)) err('illegal character');
+      const ch = String.fromCodePoint(cp);
+      s += ch; i += ch.length;
+    }
+    if (quote) err('unclosed attribute value');
+    return s;
+  };
+  if (src.startsWith('<?xml', i)) {
+    const end = src.indexOf('?>', i);
+    if (end < 0) err('unclosed XML declaration');
+    const decl = src.slice(i, end + 2);
+    if (!/^<\?xml\s+version\s*=\s*(?:"1\.0"|'1\.0')(?:\s+encoding\s*=\s*(?:"UTF-8"|'UTF-8'))?(?:\s+standalone\s*=\s*(?:"yes"|"no"|'yes'|'no'))?\s*\?>$/.test(decl)) err('bad XML declaration');
+    i = end + 2;
+  }
+  const parseElement = () => {
+    if (src[i] !== '<') err('expected <');
+    i++;
+    if (src[i] === '/' || src[i] === '!' || src[i] === '?') err('expected an element name');
+    const name = readName();
+    const attrs = {};
+    while (true) {
+      skipWs();
+      if (i >= n) err('unclosed start tag');
+      if (src[i] === '>' || src[i] === '/') break;
+      const an = readName();
+      skipWs();
+      if (src[i] !== '=') err('expected =');
+      i++;
+      skipWs();
+      const q = src[i];
+      if (q !== '"' && q !== "'") err('attribute value is not quoted');
+      i++;
+      const v = readText(q);
+      if (src[i] !== q) err('unclosed attribute value');
+      i++;
+      if (Object.hasOwn(attrs, an)) err('duplicate attribute ' + an);
+      attrs[an] = v;
+    }
+    const children = [];
+    if (src[i] === '/') { if (src[i + 1] !== '>') err('expected />'); i += 2; return { name, attrs, children }; }
+    if (src[i] !== '>') err('expected >');
+    i++;
+    while (i < n) {
+      if (src.startsWith('</', i)) {
+        i += 2;
+        const endName = readName();
+        skipWs();
+        if (src[i] !== '>') err('expected >');
+        i++;
+        if (endName !== name) err(`</${endName}> does not close <${name}>`);
+        return { name, attrs, children };
+      }
+      if (src.startsWith('<!--', i)) {
+        const end = src.indexOf('-->', i + 4);
+        if (end < 0) err('unclosed comment');
+        const body = src.slice(i + 4, end);
+        if (body.includes('--') || body.endsWith('-')) err('illegal comment');
+        i = end + 3;
+        continue;
+      }
+      if (src.startsWith('<![CDATA[', i)) {
+        const end = src.indexOf(']]>', i + 9);
+        if (end < 0) err('unclosed CDATA section');
+        const body = src.slice(i + 9, end);
+        for (let k = 0; k < body.length;) { const cp = body.codePointAt(k); if (!legal(cp)) err('illegal character in CDATA'); k += String.fromCodePoint(cp).length; }
+        children.push(body);
+        i = end + 3;
+        continue;
+      }
+      if (src[i] === '<') {
+        if (src[i + 1] === '?' || src[i + 1] === '!') err('unexpected markup');
+        children.push(parseElement());
+        continue;
+      }
+      const start = i;
+      const t = readText(false);
+      if (i === start) err('parser did not advance');
+      if (t) children.push(t);
+    }
+    err('unclosed element <' + name + '>');
+  };
+  skipWs();
+  if (i >= n) err('missing root element');
+  const root = parseElement();
+  skipWs();
+  if (i !== n) err('trailing content after the root element');
+  return root;
+};
+const xmlElems = el => (el?.children || []).filter(c => c && typeof c === 'object');
+const xmlChild = (el, name) => xmlElems(el).find(c => c.name === name);
+const xmlText = el => el && (el.children || []).every(c => typeof c === 'string') ? el.children.join('') : '';
+const RFC822 = /^[A-Za-z]{3}, \d{2} [A-Za-z]{3} \d{4} \d{2}:\d{2}:\d{2} GMT$/;
 
 if (!fs.existsSync(DIST)) { console.log(`no ${DIST}/ folder: run node build.mjs first`); process.exit(1); }
 const files = walk(DIST).map(rel).sort();
@@ -165,6 +295,70 @@ if (base) {
   const old = walk(base).map(f => path.relative(base, f).split(path.sep).join('/')).filter(f => f.endsWith('.html')).sort();
   ok(JSON.stringify(old) === JSON.stringify(html.concat(GOOGLE).sort()), 'the list of HTML pages differs from', base);
   for (const f of ['sitemap.xml', 'robots.txt', GOOGLE]) ok(fs.readFileSync(path.join(base, f), 'utf8') === read(f), f, 'differs from', base);
+}
+
+// 8. RSS 2.0 feed for the Recently killed list (dist/killed.xml is not an HTML page and is not in the sitemap)
+const RSS_DATE = RFC822;
+const altLink = `<link rel="alternate" type="application/rss+xml" title="Recently killed gadgets | DeadOrSupported" href="${SITE}killed.xml">`;
+for (const bad of ['<rss></rss', '<rss><a></b></rss>', '<rss>AT&T</rss>', '<rss a=b></rss>', '<rss></rss><rss></rss>', '<rss>&nope;</rss>', '<rss x="1" x="2"/>', '<rss><</rss>']) {
+  let threw = false;
+  try { parseXml(bad); } catch { threw = true; }
+  ok(threw, 'XML parser accepted malformed input:', bad);
+}
+{
+  const sample = parseXml('<?xml version="1.0" encoding="UTF-8"?><r version="2.0"><t>A &amp; B &lt;C&gt; &quot;q&quot; &apos;z&apos;</t></r>');
+  ok(sample.attrs.version === '2.0' && xmlText(xmlChild(sample, 't')) === `A & B <C> "q" 'z'`, 'XML parser did not decode the predefined entities');
+}
+ok(exists('killed.xml'), 'dist/killed.xml is missing');
+ok(!sm.includes('killed.xml'), 'killed.xml must not be listed in sitemap.xml');
+let rss = null, rssErr = '';
+if (exists('killed.xml')) {
+  const raw = read('killed.xml');
+  ok(raw.startsWith('<?xml version="1.0" encoding="UTF-8"?>'), 'killed.xml is missing the XML declaration');
+  try { rss = parseXml(raw); } catch (e) { rssErr = e.message; }
+  ok(!rssErr, 'dist/killed.xml is not well-formed XML:', rssErr);
+}
+const killedPage = exists('killed.html') ? read('killed.html') : '';
+const headEnd = killedPage.indexOf('</head>');
+const killedHead = headEnd >= 0 ? killedPage.slice(0, headEnd) : '';
+ok(killedHead.includes(altLink), 'killed.html <head> is missing the RSS alternate link');
+ok(headEnd >= 0 && !killedPage.slice(headEnd).includes('application/rss+xml'), 'RSS alternate link appears outside killed.html <head>');
+const otherRss = html.filter(f => f !== 'killed.html' && read(f).includes('application/rss+xml'));
+ok(otherRss.length === 0, 'RSS alternate link is on a page other than killed.html:', otherRss.join(', '));
+if (rss) {
+  ok(rss.name === 'rss' && rss.attrs.version === '2.0', 'killed.xml root is not <rss version="2.0">', rss.name, rss.attrs.version);
+  ok(rss.attrs['xmlns:atom'] === 'http://www.w3.org/2005/Atom', 'killed.xml is missing the atom namespace');
+  const channels = xmlElems(rss).filter(e => e.name === 'channel');
+  const channel = channels[0];
+  ok(channels.length === 1 && xmlText(xmlChild(channel, 'title')) === 'Recently killed gadgets | DeadOrSupported', 'channel title missing or wrong');
+  ok(channel && xmlText(xmlChild(channel, 'link')) === SITE + 'killed.html', 'channel link missing or wrong');
+  ok(channel && xmlText(xmlChild(channel, 'description')) === 'The latest gadgets and smart-home devices to lose updates or cloud service, newest first.', 'channel description missing or wrong');
+  ok(channel && xmlText(xmlChild(channel, 'language')) === 'en', 'channel language missing or wrong');
+  const built = channel && xmlText(xmlChild(channel, 'lastBuildDate'));
+  ok(RSS_DATE.test(built || '') && !Number.isNaN(Date.parse(built)), 'lastBuildDate is not an RFC 822 date', built);
+  const self = channel ? xmlElems(channel).filter(e => e.name === 'atom:link') : [];
+  ok(self.length === 1 && self[0].children.length === 0 && self[0].attrs.href === SITE + 'killed.xml' && self[0].attrs.rel === 'self' && self[0].attrs.type === 'application/rss+xml', 'atom:link self is missing or wrong');
+  const items = channel ? xmlElems(channel).filter(e => e.name === 'item') : [];
+  const timeline = (killedPage.match(/<ul class="feed timeline">([\s\S]*?)<\/ul>/) || [, ''])[1];
+  const shown = [...timeline.matchAll(/<li>([\s\S]*?)<\/li>/g)].map(m => m[1]).filter(li => /<span class="badge st-dead">/.test(li) && /<time datetime="\d{4}-\d{2}(?:-\d{2})?"/.test(li));
+  ok(shown.length > 0, 'killed.html shows no dead devices with an end-of-support date');
+  ok(items.length === shown.length, `killed.xml has ${items.length} items but killed.html shows ${shown.length} dead devices with an end date`);
+  shown.forEach((li, n) => {
+    const it = items[n];
+    const title = xmlText(xmlChild(it, 'title'));
+    const link = xmlText(xmlChild(it, 'link'));
+    const guidEl = xmlChild(it, 'guid');
+    const pub = xmlText(xmlChild(it, 'pubDate'));
+    const href = (li.match(/<a href="(device\/[^"]+\.html)">/) || [])[1];
+    const eos = (li.match(/<time datetime="(\d{4}-\d{2}(?:-\d{2})?)"/) || [])[1];
+    const expectPub = eos ? new Date(eos.length === 7 ? eos + '-28' : eos).toUTCString() : '';
+    const pageName = unesc((li.match(/<a href="device\/[^"]+\.html">([^<]*)<\/a>/) || [])[1] || '');
+    ok(!!title && title === pageName, 'item title does not match the device on killed.html', title, pageName);
+    ok(!!href && link === SITE + href && link.startsWith(SITE + 'device/') && link.endsWith('.html') && exists(urlToFile(link)), 'item link is not an absolute URL of a built device page', link);
+    ok(!!guidEl && guidEl.attrs.isPermaLink === 'true' && xmlText(guidEl) === link, 'guid is not a permalink equal to the item link', link);
+    ok(RSS_DATE.test(pub) && pub === expectPub && !Number.isNaN(Date.parse(pub)), 'pubDate is not the RFC 822 end-of-support date', link, pub, expectPub);
+    ok(!!xmlChild(it, 'description') && xmlText(xmlChild(it, 'description')) === unesc((li.match(/<p class="tl-note">([^<]*)<\/p>/) || [])[1] || ''), 'item description does not match the device note', title);
+  });
 }
 
 console.log(`${html.length} pages, ${linkCount} internal links, ${withProduct} pages with the own-product box, ${checks} checks`);

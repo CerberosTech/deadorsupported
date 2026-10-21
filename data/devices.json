@@ -1210,5 +1210,45 @@
   "note": "Xiaomi's end-of-life date is 10 Nov 2026, three years after launch. After that it gets no software or security updates.",
   "source": "https://trust.mi.com/misrc/updates/phone",
   "verified": true
+ },
+ {
+  "name": "Samsung Galaxy Watch4",
+  "brand": "Samsung",
+  "category": "Wearable",
+  "eos": "2026-08",
+  "status": "dead",
+  "note": "Last security update was August 2026, about five years after launch. Samsung left it out of its September 2026 security bulletin, so it gets no more security patches, bug fixes or features.",
+  "source": "https://www.wareable.com/samsung/these-two-samsung-smartwatches-will-no-longer-get-software-updates",
+  "verified": true
+ },
+ {
+  "name": "Samsung Galaxy Watch4 Classic",
+  "brand": "Samsung",
+  "category": "Wearable",
+  "eos": "2026-08",
+  "status": "dead",
+  "note": "Last security update was August 2026, about five years after launch. Samsung left it out of its September 2026 security bulletin, so it gets no more security patches, bug fixes or features.",
+  "source": "https://www.wareable.com/samsung/these-two-samsung-smartwatches-will-no-longer-get-software-updates",
+  "verified": true
+ },
+ {
+  "name": "Samsung SmartThings Tracker",
+  "brand": "Samsung",
+  "category": "Gadget",
+  "eos": "2026-10-31",
+  "status": "dead",
+  "note": "Samsung ends the SmartThings Tracker service on 31 Oct 2026. From 1 Nov 2026, location checks and notifications for Tracker devices stop working in the SmartThings app. Galaxy SmartTag is not affected.",
+  "source": "https://9to5google.com/2026/09/29/samsung-smartthings-is-shutting-down-support-for-galaxy-smarttag-in-october/",
+  "verified": true
+ },
+ {
+  "name": "Bose SoundTouch speakers",
+  "brand": "Bose",
+  "category": "Smart home",
+  "eos": "2026-05-06",
+  "status": "dead",
+  "note": "Bose shut down the SoundTouch cloud on 6 May 2026. Presets, in-app music services and Alexa no longer work, and there are no more security or firmware updates. Bluetooth, AUX, AirPlay and Spotify Connect still work.",
+  "source": "https://www.bose.co.uk/soundtouch-end-of-life",
+  "verified": true
  }
 ]

@@ -1250,5 +1250,25 @@
   "note": "Bose shut down the SoundTouch cloud on 6 May 2026. Presets, in-app music services and Alexa no longer work, and there are no more security or firmware updates. Bluetooth, AUX, AirPlay and Spotify Connect still work.",
   "source": "https://www.bose.co.uk/soundtouch-end-of-life",
   "verified": true
+ },
+ {
+  "name": "Sony networked AV (older models)",
+  "brand": "Sony",
+  "category": "Streaming",
+  "eos": "2026-11-17",
+  "status": "dead",
+  "note": "Sony ends network services on dozens of older models on 17 Nov 2026: Netflix, Prime Video, Spotify, Google Cast, Pandora, Slacker and Vudu stop working. Affected include BDP-S series Blu-ray players, BDV home theaters, HT-CT790/HT-NT5/HT-ST5000 soundbars, STR-DN/STR-DA receivers and SRS-X7/SA-NS speakers. Disc playback and inputs keep working. Check the model list at the source.",
+  "source": "https://www.sony.com/electronics/support/articles/00398725",
+  "verified": true
+ },
+ {
+  "name": "Control4 systems on OS2",
+  "brand": "Control4",
+  "category": "Smart home",
+  "eos": "2026-11-01",
+  "status": "dead",
+  "note": "Snap One ends all cloud services for Control4 systems still on OS2 on 1 Nov 2026: the OS2 Control4 app, remote access, 4Sight, Intercom Anywhere, voice assistants and remote dealer support. Local keypads, remotes, touch screens and automations keep working. Updating to OS3 or X4 keeps cloud features.",
+  "source": "https://www.snapav.com/shop/en/snapav/C4-4Sight-A",
+  "verified": true
  }
 ]

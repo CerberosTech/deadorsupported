@@ -1270,5 +1270,45 @@
   "note": "Snap One ends all cloud services for Control4 systems still on OS2 on 1 Nov 2026: the OS2 Control4 app, remote access, 4Sight, Intercom Anywhere, voice assistants and remote dealer support. Local keypads, remotes, touch screens and automations keep working. Updating to OS3 or X4 keeps cloud features.",
   "source": "https://www.snapav.com/shop/en/snapav/C4-4Sight-A",
   "verified": true
+ },
+ {
+  "name": "Edimax BR-6478AC V3 router",
+  "brand": "Edimax",
+  "category": "Router",
+  "eos": "2020-01-10",
+  "status": "dead",
+  "note": "Edimax ended its 2-year support period and discontinued the BR-6478AC V3 on 10 Jan 2020: no more firmware updates, technical support or services. Public command-injection flaws in its firmware (for example CVE-2025-14093) will not be fixed, so replace it or at least disable remote management.",
+  "source": "https://edimax.com/edimax/post/post/data/edimax/global/eos_announcement/",
+  "verified": true
+ },
+ {
+  "name": "Atari VCS (2021 console)",
+  "brand": "Atari",
+  "category": "Gadget",
+  "eos": "2027-02-01",
+  "status": "dead",
+  "note": "Atari has stopped onboarding new games and is shutting down the Atari VCS software store; owners can buy games through 1 Feb 2027 (Atari's page, 21 Oct 2026). Games already bought and downloaded keep working. Atari also plans an OS update that removes the need for its servers, after which platform support ends.",
+  "source": "https://atari.com/pages/atari-vcs",
+  "verified": true
+ },
+ {
+  "name": "Yale View (cameras, doorbells and app)",
+  "brand": "Yale",
+  "category": "Smart home",
+  "eos": "2030-12-31",
+  "status": "auto",
+  "note": "Yale is phasing out Yale View: sales end 31 Dec 2026, full security and software updates, bug fixes and support run until 31 Dec 2028, then only critical security updates until 31 Dec 2030. From 1 Jan 2031 the Yale View app is shut down and all support ends.",
+  "source": "https://yalehome.se/nyheter/2026-nyheter/viktig-information-om-yale-view-och-yale-smart-living-alarm/",
+  "verified": true
+ },
+ {
+  "name": "Yale Smart Living Alarm (Sync, SR, HSA)",
+  "brand": "Yale",
+  "category": "Smart home",
+  "eos": "2031-12-31",
+  "status": "auto",
+  "note": "Yale is phasing out Smart Living Alarm (Sync, SR and HSA alarms): sales end 31 Dec 2027, full security and software updates, bug fixes and support run until 31 Dec 2029, then only critical security updates until 31 Dec 2031. From 1 Jan 2032 the Yale Smart Living Alarm app is shut down and all support ends.",
+  "source": "https://yalehome.se/nyheter/2026-nyheter/viktig-information-om-yale-view-och-yale-smart-living-alarm/",
+  "verified": true
  }
 ]

@@ -1310,5 +1310,15 @@
   "note": "Yale is phasing out Smart Living Alarm (Sync, SR and HSA alarms): sales end 31 Dec 2027, full security and software updates, bug fixes and support run until 31 Dec 2029, then only critical security updates until 31 Dec 2031. From 1 Jan 2032 the Yale Smart Living Alarm app is shut down and all support ends.",
   "source": "https://yalehome.se/nyheter/2026-nyheter/viktig-information-om-yale-view-och-yale-smart-living-alarm/",
   "verified": true
+ },
+ {
+  "name": "D-Link DIR-X4860 router",
+  "brand": "D-Link",
+  "category": "Router",
+  "eos": "2024-12-24",
+  "status": "dead",
+  "note": "D-Link lists every hardware revision and firmware version of the DIR-X4860 (sold outside the US and Canada) as end of life since 24 Dec 2024: no more firmware or security updates. In Oct 2026 D-Link published an unauthenticated remote stack buffer overflow in its web server that will not be fixed, so D-Link says to retire and replace it.",
+  "source": "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10521",
+  "verified": true
  }
 ]

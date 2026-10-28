@@ -1320,5 +1320,25 @@
   "note": "D-Link lists every hardware revision and firmware version of the DIR-X4860 (sold outside the US and Canada) as end of life since 24 Dec 2024: no more firmware or security updates. In Oct 2026 D-Link published an unauthenticated remote stack buffer overflow in its web server that will not be fixed, so D-Link says to retire and replace it.",
   "source": "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10521",
   "verified": true
+ },
+ {
+  "name": "D-Link DCS-6045L camera",
+  "brand": "D-Link",
+  "category": "Smart home",
+  "eos": "2019-07-01",
+  "status": "dead",
+  "note": "D-Link lists every hardware revision and firmware version of the DCS-6045L IP camera as end of life since 1 Jul 2019: no more firmware or security updates. In Sep 2026 D-Link logged a new unauthenticated command injection (firmware 1.02.01) that will not be fixed, so D-Link says to retire and replace it.",
+  "source": "https://supportannouncement.us.dlink.com/security/publication.aspx?name=SAP10271",
+  "verified": true
+ },
+ {
+  "name": "Legrand Home smart lighting (HomeKit)",
+  "brand": "Legrand",
+  "category": "Smart home",
+  "eos": "2026-04-01",
+  "status": "dead",
+  "note": "Legrand shut down the HomeKit Lighting System servers and the Legrand Home app on 1 Apr 2026 (HKRL10WH, HKRL20WH, HKRL50WH, HKRL60WH, HKRP10, HKRP20). Remote access, Alexa and Google Home control and all support ended, with no more updates; devices set up in Apple Home keep working locally with Siri.",
+  "source": "https://www.legrand.us/solutions/smart-lighting/homekit",
+  "verified": true
  }
 ]
